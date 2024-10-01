@@ -56,8 +56,8 @@ export default defineNuxtConfig({
                     },
                     {
                         name: 'Català',
-                        code: 'ca',
-                        file: 'ca.json',
+                        code: 'ca-ES',
+                        file: 'ca-ES.json',
                     },
                     {
                         name: 'Castellano',
