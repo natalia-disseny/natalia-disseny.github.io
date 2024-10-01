@@ -1,7 +1,7 @@
 <template>
     <div
         class="mt-24 rounded-[40px] bg-gray-900 py-24 sm:mt-32 lg:mt-40 lg:py-32">
-        <div class="mx-auto mt-16 max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <Heading
                 :inverted-colors="true"
                 :eyebrow="$t('about.services.eyebrow')"
@@ -9,7 +9,7 @@
                 :subheading="$t('about.services.subheading')" />
 
             <Stats
-                class="my-20 mt-16"
+                class="mt-16"
                 :inverted-colors="true"
                 :items="[
                     {

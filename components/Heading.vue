@@ -16,8 +16,7 @@ defineProps<{
             ><span class="sr-only"> - </span
             ><span
                 class="font-display mt-2 block max-w-5xl text-5xl font-medium tracking-tight [text-wrap:balance] sm:text-6xl"
-                >{{ heading }}</span
-            >
+                v-html="heading" />
         </h1>
         <div
             :class="[invertedColors ? 'text-white' : 'text-gray-600']"
