@@ -1,0 +1,40 @@
+{
+    "about": {
+        "intro": {
+            "eyebrow": "A little about me",
+            "heading": "My strength is adaptability",
+            "subheading": "I focus on creating beautiful, responsive websites that not only look great but also help small and local businesses find their unique place in the market",
+            "description": "<p>Hello, I'm Natàlia, the creative mind behind Natàlia Disseny. I’m passionate about helping small local businesses stand out in the digital world with stunning, functional, and responsive websites.</p><p>My mission is to empower these businesses by reducing the technology gap and helping them connect with a younger, more tech-savvy audience. Whether you're in retail, hospitality, or any other industry, I'm here to bring your unique vision to life.</p>",
+            "stats": ["Years of experience", "Projects successfully completed"]
+        },
+        "services": {
+            "eyebrow": "My values",
+            "heading": "xxx",
+            "subheading": "xxx",
+            "description": "xxx",
+            "stats": [
+                "<strong>Empowering local businesses</strong><br/> An online presence with user-friendly, responsive designs to reflect your unique brand and attract the ideal customers",
+                "<strong>Bridging the technology gap</strong><br/> Using the latest web technologies to help you stay competitive and relevant in today’s digital world",
+                "<strong>Customized solutions for all industries</strong><br/> Providing tailored web solutions that meet your business’s specific needs, with versatility and creativity",
+                "<strong>Supporting non-profit organizations</strong><br/> Working with non-profits too, helping them reach a wider audience and achieve their missions",
+                "<strong>Attracting a younger audience</strong><br/> Designs are aimed at appealing to a younger, technology-active demographic, driving more traffic and engagement"
+            ]
+        }
+    },
+    "contact": {
+        "eyebrow": "Talk to me",
+        "heading": "And let's work together!",
+        "subheading": "I can’t wait to know you",
+
+        "address": {
+            "description": "My home is my office, where creativity and productivity come together.",
+            "title": "My \"office\""
+        },
+        "form": {
+            "name": "name",
+            "email": "email",
+            "company": "company",
+            "message": "message"
+        }
+    }
+}

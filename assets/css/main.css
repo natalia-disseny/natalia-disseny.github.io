@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+b,
+strong {
+    font-weight: 600;
+}
