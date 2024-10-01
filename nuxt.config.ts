@@ -42,6 +42,7 @@ export default defineNuxtConfig({
             '@nuxtjs/i18n',
             {
                 defaultLocale: 'ca',
+                strategy: 'prefix_except_default',
                 detectBrowserLanguage: false,
                 langDir: 'locales',
                 compilation: {
@@ -68,9 +69,10 @@ export default defineNuxtConfig({
         ],
     ],
 
-    i18n: {
-        precompile: {
-            strictMessage: false,
+    nitro: {
+        prerender: {
+            crawlLinks: true,
+            failOnError: false,
         },
     },
 })
