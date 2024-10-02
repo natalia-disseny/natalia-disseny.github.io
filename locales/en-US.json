@@ -30,7 +30,6 @@
 
         "form": {
             "name": "name",
-            "email": "email",
             "company": "company",
             "message": "message"
         }

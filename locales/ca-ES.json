@@ -59,7 +59,6 @@
 
         "form": {
             "name": "nom",
-            "email": "email",
             "company": "empresa",
             "message": "missatge"
         }

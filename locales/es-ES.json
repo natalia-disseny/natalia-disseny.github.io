@@ -24,7 +24,6 @@
 
         "form": {
             "name": "nombre",
-            "email": "email",
             "company": "empresa",
             "message": "mensaje"
         }

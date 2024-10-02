@@ -67,6 +67,21 @@ export default defineNuxtConfig({
                 ],
             },
         ],
+        [
+            'nuxt-mail',
+            {
+                message: {
+                    to: 'nataliasmdev@gmail.com',
+                },
+                smtp: {
+                    service: 'gmail',
+                    auth: {
+                        user: 'nataliasmdev@gmail.com',
+                        pass: 'ihvr hoiq yakc kpvv',
+                    },
+                },
+            },
+        ],
     ],
 
     nitro: {
