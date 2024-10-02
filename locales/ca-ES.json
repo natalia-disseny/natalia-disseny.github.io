@@ -7,16 +7,46 @@
             "description": "<p>Hola, sóc la Natàlia, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive. </p><p>La meva missió és empoderar aquestes empreses reduint la bretxa tecnològica i ajudant-les a connectar amb un públic més jove i tecnològicament avançat. Tant si estàs en el sector del comerç, l'hostaleria o qualsevol altra indústria, sóc aquí per donar vida a la teva visió única.</p>",
             "stats": ["Anys d'experiència", "Projectes realitzats amb èxit"]
         },
-        "services": {
+        "goals": {
             "eyebrow": "Els meus objectius",
             "heading": "Petits passos porten a grans resultats",
             "subheading": "Amb aquests objectius en ment, m'esforço per crear webs que no només es vegin impressionants, sinó que també marquin una diferència.",
             "stats": [
-                "<strong>Potenciar les empreses locals</strong><br/> Una presència online amb dissenys fàcils d'utilitzar i adaptatius per reflectir la teva marca i atraure els clients ideals",
-                "<strong>Reduir la bretxa tecnològica</strong><br/> Utilitzant les últimes tecnologies web per ajudar-te a mantenir una marca competitiva i rellevant",
-                "<strong>Solucions personalitzades</strong ><br/> Proporcionant solucions web a mida específiques pel teu negoci, amb versatilitat i creativitat",
-                "<strong>Suport a organitzacions i entitats</strong><br/> També treballo amb entitats sense ànim de lucre, ajudant-les a arribar a un públic més ampli i assolir el seu objectiu",
-                "<strong>Atraure un públic més jove</strong><br/> Els dissenys tenen com a objectiu atraure a una població més jove i tecnològica, impulsant més trànsit i compromís"
+                {
+                    "title": "Potenciar les empreses locals",
+                    "description": "Una presència online amb dissenys fàcils d'utilitzar i adaptatius per reflectir la teva marca i atraure els clients ideals"
+                },
+                {
+                    "title": "Reduir la bretxa tecnològica",
+                    "description": "Utilitzant les últimes tecnologies web per ajudar-te a mantenir una marca competitiva i rellevant"
+                },
+                {
+                    "title": "Solucions personalitzades",
+                    "description": "Proporcionant solucions web a mida específiques pel teu negoci, amb versatilitat i creativitat"
+                },
+                {
+                    "title": "Suport a organitzacions i entitats",
+                    "description": "També treballo amb entitats sense ànim de lucre, ajudant-les a arribar a un públic més ampli i assolir el seu objectiu"
+                }
+            ]
+        },
+        "services": {
+            "eyebrow": "Serveis que ofereixo",
+            "heading": "Expert Web Design, UX/UI<br/> and More",
+            "subheading": "Whether you're building a new website or enhancing user experiences, I provide expert support to bring your vision to life across all devices.",
+            "stats": [
+                {
+                    "description": "<strong>Responsive and UX/UI Design Web Design</strong></br/> Creating beautiful, user-friendly websites with intuitive user experiences that look great on any device."
+                },
+                {
+                    "description": "<strong>E-commerce Solutions</strong><br/> Building online stores that are both functional and visually appealing."
+                },
+                {
+                    "description": "<strong>Website Maintenance</strong><br/> Keeping your website up-to-date and running smoothly."
+                },
+                {
+                    "description": "<strong>Non-Profit Web Design</strong><br/> Helping non-profits reach their goals with effective, engaging web design."
+                }
             ]
         }
     },

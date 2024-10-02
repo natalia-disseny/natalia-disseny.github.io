@@ -13,7 +13,7 @@ const availableLocales = computed(() => {
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl lg:max-w-none">
                     <div class="flex items-center justify-between">
-                        <NuxtLink to="/" title="Home">logo</NuxtLink>
+                        <Logo />
 
                         <div class="flex items-center gap-x-8">
                             <NuxtLink
@@ -24,11 +24,9 @@ const availableLocales = computed(() => {
                                 {{ locale.name }}
                             </NuxtLink>
 
-                            <Button link="/contact" title="Contact"
-                                ><span class="relative top-px">{{
-                                    $t('contact.eyebrow')
-                                }}</span></Button
-                            >
+                            <Button link="/contact" title="Contact">{{
+                                $t('contact.eyebrow')
+                            }}</Button>
 
                             <button
                                 type="button"

@@ -1,33 +1,34 @@
-<template>
-    <div
-        class="mt-24 rounded-[40px] bg-gray-900 py-24 sm:mt-32 lg:mt-40 lg:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <Heading
-                :inverted-colors="true"
-                :eyebrow="$t('about.services.eyebrow')"
-                :heading="$t('about.services.heading')"
-                :subheading="$t('about.services.subheading')" />
+<script setup lang="ts">
+const appConfig = useAppConfig()
+</script>
 
-            <Stats
-                class="mt-16"
-                :inverted-colors="true"
-                :items="[
-                    {
-                        name: $t('about.services.stats.0'),
-                    },
-                    {
-                        name: $t('about.services.stats.1'),
-                    },
-                    {
-                        name: $t('about.services.stats.2'),
-                    },
-                    {
-                        name: $t('about.services.stats.3'),
-                    },
-                    {
-                        name: $t('about.services.stats.4'),
-                    },
-                ]" />
-        </div>
+<template>
+    <div class="mx-auto my-24 max-w-7xl px-6 sm:my-32 lg:px-8">
+        <Heading
+            :eyebrow="$t('about.services.eyebrow')"
+            :heading="$t('about.services.heading')"
+            :subheading="$t('about.services.subheading')" />
+
+        <Stats
+            cols="2"
+            class="mx-auto mt-16 max-w-7xl"
+            :items="[
+                {
+                    name: $t('about.services.stats.0.description'),
+                    icon: 'draw_abstract',
+                },
+                {
+                    name: $t('about.services.stats.1.description'),
+                    icon: 'storefront',
+                },
+                {
+                    name: $t('about.services.stats.2.description'),
+                    icon: 'settings_heart',
+                },
+                {
+                    name: $t('about.services.stats.3.description'),
+                    icon: 'volunteer_activism',
+                },
+            ]" />
     </div>
 </template>

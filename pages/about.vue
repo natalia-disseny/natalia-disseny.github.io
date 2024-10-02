@@ -1,11 +1,15 @@
 <script setup>
-import AboutIntro from './about/intro.vue'
-import AboutServices from './about/services.vue'
+import Intro from './about/intro.vue'
+import Goals from './about/goals.vue'
+import Services from './about/services.vue'
+import Contact from './about/contact.vue'
 </script>
 
 <template>
     <div>
-        <AboutIntro />
-        <AboutServices />
+        <Intro />
+        <Goals />
+        <Services />
+        <Contact />
     </div>
 </template>
