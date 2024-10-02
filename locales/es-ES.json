@@ -20,10 +20,8 @@
         "heading": "Y trabajemos juntos!",
         "subheading": "Estoy deseando conocerte",
 
-        "address": {
-            "description": "Mi hogar es mi oficina, donde conviven la creatividad y la productividad.",
-            "title": "Mi \"oficina\""
-        },
+        "addressTitle": "Mi \"oficina\"",
+
         "form": {
             "name": "nombre",
             "email": "email",

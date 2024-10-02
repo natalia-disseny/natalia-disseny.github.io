@@ -7,7 +7,7 @@
             <div
                 class="relative flex flex-auto overflow-hidden rounded-tl-[40px] rounded-tr-[40px] bg-white pt-14">
                 <div class="relative isolate flex w-full flex-col pt-9">
-                    <main class="w-full flex-auto">
+                    <main class="w-full flex-auto py-36">
                         <NuxtPage />
                     </main>
 

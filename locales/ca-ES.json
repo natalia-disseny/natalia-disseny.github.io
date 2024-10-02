@@ -55,10 +55,8 @@
         "heading": "I treballem junts!",
         "subheading": "Estic desitjant conèixer-te",
 
-        "address": {
-            "description": "La meva llar és la meva oficina, on conviuen la creativitat i la productivitat.",
-            "title": "La meva \"oficina\""
-        },
+        "addressTitle": "La meva \"oficina\"",
+
         "form": {
             "name": "nom",
             "email": "email",

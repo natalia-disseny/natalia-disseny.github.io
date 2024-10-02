@@ -1,43 +1,6 @@
-<script setup lang="ts">
-const appConfig = useAppConfig()
-</script>
-
 <template>
     <div>
-        <h2 class="font-display text-base font-semibold text-gray-900">
-            {{ $t('contact.address.title') }}
-        </h2>
-        <p class="mt-6 text-base text-gray-900">
-            {{ $t('contact.address.description') }}
-        </p>
-        <ul role="list" class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <li>
-                <address class="text-sm not-italic text-gray-900">
-                    <strong class="text-gray-950">Barcelona</strong><br />
-                    Carrer Joan Maragall
-                    <br />
-                    08470 Sant Celoni
-                </address>
-            </li>
-            <li>
-                <address class="text-sm not-italic text-gray-900">
-                    <br />
-                    <a
-                        class="hover:text-coral-500"
-                        :href="
-                            'tel:+34' +
-                            appConfig.contact.phone.replace(/\s/g, '')
-                        "
-                        >+34 {{ appConfig.contact.phone }}</a
-                    ><br />
-                    <a
-                        class="hover:text-coral-500"
-                        :href="'mailto:' + appConfig.contact.email"
-                        >{{ appConfig.contact.email }}</a
-                    >
-                </address>
-            </li>
-        </ul>
+        <ContactInfo />
 
         <div
             class="before:bg-gray-950 after:bg-gray-950/10 relative mt-16 pt-16 before:absolute before:left-0 before:top-0 before:h-px before:w-6 after:absolute after:left-8 after:right-0 after:top-0 after:h-px">

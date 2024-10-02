@@ -26,10 +26,8 @@
         "heading": "And let's work together!",
         "subheading": "I can’t wait to know you",
 
-        "address": {
-            "description": "My home is my office, where creativity and productivity come together.",
-            "title": "My \"office\""
-        },
+        "addressTitle": "My \"office\"",
+
         "form": {
             "name": "name",
             "email": "email",

@@ -4,8 +4,7 @@ const appConfig = useAppConfig()
 
 <template>
     <div>
-        <div
-            class="mx-auto mt-24 grid max-w-7xl grid-cols-3 items-start gap-10 px-6 sm:mt-32 lg:mt-40 lg:px-8">
+        <BoxedDiv class="grid-cols-3 items-start gap-10">
             <div class="col-span-2">
                 <Heading
                     :eyebrow="$t('about.intro.eyebrow')"
@@ -37,7 +36,7 @@ const appConfig = useAppConfig()
                     </p>
                 </div>
             </div>
-        </div>
+        </BoxedDiv>
 
         <Stats
             class="mx-auto mt-16 max-w-7xl px-6 lg:px-8"

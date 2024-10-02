@@ -15,8 +15,7 @@ const currentDate = new Date()
 </script>
 
 <template>
-    <footer
-        class="mx-auto mt-24 w-full max-w-7xl bg-white px-6 sm:mt-32 lg:mt-40 lg:px-8">
+    <footer class="mx-auto w-full max-w-7xl bg-white px-6 lg:px-8">
         <div
             class="border-neutral-950/10 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t pt-12">
             <Logo />
