@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const appConfig = useAppConfig()
-</script>
-
 <template>
     <div class="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 lg:mt-40 lg:px-8">
         <div class="mx-auto max-w-2xl lg:max-w-none">
@@ -10,9 +6,9 @@ const appConfig = useAppConfig()
                 <div class="mx-auto max-w-4xl">
                     <h2 class="mb-10 text-4xl">Parla'm del teu projecte</h2>
 
-                    <Button link="/contact" title="Contact"
-                        >Digues hola!</Button
-                    >
+                    <NuxtLink to="/contact" class="btn-primary">
+                        Digues hola!
+                    </NuxtLink>
 
                     <div class="mt-10 w-1/2 border-t border-white/10 pt-10">
                         <ContactInfo />

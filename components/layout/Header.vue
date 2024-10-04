@@ -9,7 +9,7 @@ const availableLocales = computed(() => {
 
 <template>
     <header>
-        <div class="absolute left-0 right-0 top-2 z-40 pt-14">
+        <div class="absolute left-0 right-0 top-2 z-30 pt-14">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl lg:max-w-none">
                     <div class="flex items-center justify-between">
@@ -17,16 +17,19 @@ const availableLocales = computed(() => {
 
                         <div class="flex items-center gap-x-8">
                             <NuxtLink
-                                class="bg-white text-gray-600 hover:text-teal"
+                                class="hover:text-teal bg-white text-gray-600"
                                 v-for="locale in availableLocales"
                                 :key="locale.code"
                                 :to="switchLocalePath(locale.code)">
                                 {{ locale.name }}
                             </NuxtLink>
 
-                            <Button link="/contact" title="Contact">{{
-                                $t('contact.eyebrow')
-                            }}</Button>
+                            <NuxtLink
+                                to="/contact"
+                                title="Contact"
+                                class="btn-primary">
+                                {{ $t('contact.eyebrow') }}
+                            </NuxtLink>
 
                             <button
                                 type="button"
@@ -43,5 +46,6 @@ const availableLocales = computed(() => {
                 </div>
             </div>
         </div>
+        <div class="relative z-50 overflow-hidden bg-gray-900 pt-2"></div>
     </header>
 </template>

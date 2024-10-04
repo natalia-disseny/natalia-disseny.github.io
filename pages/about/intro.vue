@@ -4,7 +4,7 @@ const appConfig = useAppConfig()
 
 <template>
     <div>
-        <BoxedDiv class="grid-cols-3 items-start gap-10">
+        <BoxedDiv class="grid grid-cols-3 items-start gap-10">
             <div class="col-span-2">
                 <Heading
                     :eyebrow="$t('about.intro.eyebrow')"

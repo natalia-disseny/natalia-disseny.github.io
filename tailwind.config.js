@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+// const colors = require('tailwindcss/colors')
+import colors from 'tailwindcss/colors'
+
 export default {
     content: [
         './components/**/*.{js,vue,ts}',
@@ -48,6 +51,11 @@ export default {
             },
             white: '#ffffff',
             black: '#000000',
+            blue: colors.teal,
+            // Status colors
+            success: colors.green,
+            info: colors.cyan,
+            error: colors.red,
         },
         fontFamily: {
             sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
