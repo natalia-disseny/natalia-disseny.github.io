@@ -1,0 +1,1 @@
+import{c as o,t as r,P as a,o as s}from"./1PVOThgf.js";import{_ as t}from"./DlAUqK2U.js";const i={};function n(e,c){return s(),o("div",null,"This is a dynamic route: "+r((e._.provides[a]||e.$route).params.id),1)}const d=t(i,[["render",n]]);export{d as default};
