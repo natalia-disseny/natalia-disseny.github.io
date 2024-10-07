@@ -1,6 +1,9 @@
 <script setup>
 const appConfig = useAppConfig()
+const localePath = useLocalePath()
 </script>
 <template>
-    <NuxtLink to="/" title="Home">{{ appConfig.contact.company }}</NuxtLink>
+    <NuxtLink :to="localePath('/')" title="Home">{{
+        appConfig.contact.company
+    }}</NuxtLink>
 </template>

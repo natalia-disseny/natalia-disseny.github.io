@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>
+
 <template>
     <div class="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 lg:mt-40 lg:px-8">
         <div class="mx-auto max-w-2xl lg:max-w-none">
@@ -6,7 +10,7 @@
                 <div class="mx-auto max-w-4xl">
                     <h2 class="mb-10 text-4xl">Parla'm del teu projecte</h2>
 
-                    <NuxtLink to="/contact" class="btn-primary">
+                    <NuxtLink :to="localePath('/contact')" class="btn-primary">
                         Digues hola!
                     </NuxtLink>
 

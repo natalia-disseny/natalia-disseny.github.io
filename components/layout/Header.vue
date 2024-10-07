@@ -2,6 +2,8 @@
 const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
+const localePath = useLocalePath()
+
 const availableLocales = computed(() => {
     return locales.value.filter((i) => i.code !== locale.value)
 })
@@ -25,7 +27,7 @@ const availableLocales = computed(() => {
                             </NuxtLink>
 
                             <NuxtLink
-                                to="/contact"
+                                :to="localePath('/contact')"
                                 title="Contact"
                                 class="btn-primary">
                                 {{ $t('contact.eyebrow') }}
