@@ -37,15 +37,19 @@ defineProps<{
                     class="text-3xl font-semibold">
                     <span
                         v-if="stat.icon || stat.value"
-                        :class="{
-                            'material-symbols-rounded text-7xl': stat.icon,
-                        }">
+                        :class="[
+                            stat.icon
+                                ? 'material-symbols-rounded text-7xl'
+                                : stat.value && /\d/.test(stat.value)
+                                  ? 'font-body'
+                                  : 'font-display',
+                        ]">
                         {{ stat.icon ?? stat.value }}
                     </span>
                 </dd>
                 <dt
                     :class="[invertedColors ? 'text-white' : 'text-gray-800']"
-                    class="py-2 text-base font-light"
+                    class="py-2 text-lg"
                     v-html="stat.name" />
             </div>
         </dl>

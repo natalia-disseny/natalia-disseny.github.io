@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-b,
-strong {
-    font-weight: 600;
+@layer base {
+    body {
+        @apply font-body;
+    }
+    b,
+    strong {
+        font-weight: 600;
+    }
+    p {
+        @apply text-lg leading-7 text-gray-800;
+    }
 }
 
 @layer components {

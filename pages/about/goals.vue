@@ -9,7 +9,7 @@
                 :subheading="$t('about.goals.subheading')" />
 
             <Stats
-                cols="2"
+                :cols="2"
                 class="mt-16"
                 :inverted-colors="true"
                 :items="[

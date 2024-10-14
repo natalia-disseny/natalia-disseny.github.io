@@ -58,7 +58,10 @@ export default {
             error: colors.red,
         },
         fontFamily: {
-            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            sans: ['Comfortaa', 'ui-sans-serif', 'system-ui'],
+            serif: ['Montserrat', 'ui-serif', 'Georgia'],
+            display: ['Comfortaa'],
+            body: ['Montserrat'],
         },
         extend: {},
     },

@@ -11,7 +11,7 @@ const appConfig = useAppConfig()
                     :heading="$t('about.intro.heading')"
                     :subheading="$t('about.intro.subheading')" />
                 <div
-                    class="mt-10 max-w-2xl space-y-6 text-base leading-7 text-gray-600"
+                    class="max-w-2xl space-y-6"
                     v-html="$t('about.intro.description')" />
             </div>
 
@@ -26,7 +26,7 @@ const appConfig = useAppConfig()
                     "
                     src="https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=1920&q=75" />
                 <div
-                    class="from-black to-black/0 absolute inset-0 flex flex-col justify-end bg-gradient-to-t to-40% p-6">
+                    class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
                     <p
                         class="font-display text-base/6 font-semibold tracking-wide text-white">
                         {{ appConfig.contact.name }}
