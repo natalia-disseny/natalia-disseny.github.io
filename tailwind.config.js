@@ -50,8 +50,7 @@ export default {
                 900: '#008080',
             },
             white: '#ffffff',
-            black: '#000000',
-            blue: colors.teal,
+            black: '#333333',
             // Status colors
             success: colors.green,
             info: colors.cyan,

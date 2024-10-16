@@ -16,8 +16,9 @@ const currentDate = new Date()
             <Logo />
             <div class="text-xs">
                 © {{ currentDate.getFullYear() }} - This work is licensed under
-                <TextLink
-                    link="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+                <NuxtLink
+                    class="underline hover:text-coral-500 hover:no-underline"
+                    to="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
                     target="_blank"
                     >CC BY-NC-SA 4.0
 
@@ -27,7 +28,7 @@ const currentDate = new Date()
                             class="h-6"
                             :src="image" />
                     </div>
-                </TextLink>
+                </NuxtLink>
             </div>
         </div>
     </footer>

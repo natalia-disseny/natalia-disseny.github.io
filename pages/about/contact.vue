@@ -10,7 +10,9 @@ const localePath = useLocalePath()
                 <div class="mx-auto max-w-4xl">
                     <h2 class="mb-10 text-4xl">Parla'm del teu projecte</h2>
 
-                    <NuxtLink :to="localePath('/contact')" class="btn-primary">
+                    <NuxtLink
+                        :to="localePath('/contact')"
+                        class="btn-primary --onDark">
                         Digues hola!
                     </NuxtLink>
 
