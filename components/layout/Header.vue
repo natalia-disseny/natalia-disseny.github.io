@@ -26,7 +26,7 @@ const menu = [
 <template>
     <header>
         <div class="absolute left-0 right-0 top-2 z-30">
-            <LanguageSelector class="mb-6" />
+            <LanguageSelector class="mb-6 hidden sm:block" />
             <LayoutHeaderMenu />
         </div>
         <div class="relative z-50 overflow-hidden bg-black pt-2">
@@ -38,11 +38,9 @@ const menu = [
                 leave="transition-all duration-300 ease-out"
                 leave-from="transform opacity-100 max-h-[550px]"
                 leave-to="transform opacity-0 max-h-0">
-                <LanguageSelector on-dark />
+                <LanguageSelector on-dark class="hidden sm:block" />
 
-                <div class="pb-16 pt-6">
-                    <LayoutHeaderMenu onDark />
-                </div>
+                <LayoutHeaderMenu onDark />
 
                 <nav
                     class="mt-px font-display text-5xl font-medium tracking-tight text-white">

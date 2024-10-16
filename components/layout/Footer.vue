@@ -12,7 +12,7 @@ const currentDate = new Date()
 <template>
     <footer class="mx-auto w-full max-w-7xl bg-white px-6 lg:px-8">
         <div
-            class="border-neutral-950/10 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t pt-12">
+            class="border-neutral-950/10 mb-20 flex flex-col flex-wrap items-center gap-x-6 gap-y-4 border-t pt-12 md:flex-row md:justify-between">
             <Logo />
             <div class="text-xs">
                 © {{ currentDate.getFullYear() }} - This work is licensed under
@@ -22,7 +22,8 @@ const currentDate = new Date()
                     target="_blank"
                     >CC BY-NC-SA 4.0
 
-                    <div class="mt-2 flex justify-end gap-x-2">
+                    <div
+                        class="mt-2 flex justify-center gap-x-2 md:justify-end">
                         <img
                             v-for="image in licenseImages"
                             class="h-6"

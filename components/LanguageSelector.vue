@@ -10,7 +10,8 @@ const availableLocales = computed(() => {
 
 <template>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mt-4 flex justify-end gap-x-6">
+        <div
+            class="mx-auto mt-4 flex max-w-2xl justify-end gap-x-6 lg:max-w-none">
             <NuxtLink
                 :class="{ '--onDark': onDark }"
                 class="btn-round"

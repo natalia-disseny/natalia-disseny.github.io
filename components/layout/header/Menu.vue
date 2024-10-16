@@ -9,10 +9,21 @@ const menuIsVisible = inject('menuIsVisible')
 </script>
 
 <template>
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div
+        class="mx-auto max-w-7xl px-6 lg:px-8"
+        :class="{ 'pb-4 sm:pb-16 sm:pt-6': onDark }">
         <div class="mx-auto max-w-2xl lg:max-w-none">
-            <div class="flex items-center justify-between">
+            <div class="mt-6 flex items-center justify-between sm:mt-0">
                 <Logo :on-dark="onDark" />
+
+                <NuxtLink
+                    @click="menuIsVisible = false"
+                    :class="{ '--onDark': onDark }"
+                    :to="localePath('/contact')"
+                    title="Contact"
+                    class="btn-primary sm:hidden">
+                    {{ $t('contact.eyebrow') }}
+                </NuxtLink>
 
                 <div class="flex items-center gap-x-8">
                     <NuxtLink
@@ -20,7 +31,7 @@ const menuIsVisible = inject('menuIsVisible')
                         :class="{ '--onDark': onDark }"
                         :to="localePath('/contact')"
                         title="Contact"
-                        class="btn-primary">
+                        class="btn-primary hidden sm:block">
                         {{ $t('contact.eyebrow') }}
                     </NuxtLink>
 
@@ -41,6 +52,11 @@ const menuIsVisible = inject('menuIsVisible')
                     </button>
                 </div>
             </div>
+
+            <LanguageSelector
+                v-if="menuIsVisible"
+                on-dark
+                class="px-0 sm:hidden" />
         </div>
     </div>
 </template>
