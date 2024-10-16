@@ -54,17 +54,17 @@ export default defineNuxtConfig({
                 },
                 locales: [
                     {
-                        name: 'English',
+                        name: 'En',
                         code: 'en',
                         file: 'en-US.json',
                     },
                     {
-                        name: 'Català',
+                        name: 'Ca',
                         code: 'ca',
                         file: 'ca-ES.json',
                     },
                     {
-                        name: 'Castellano',
+                        name: 'Es',
                         code: 'es',
                         file: 'es-ES.json',
                     },

@@ -20,16 +20,12 @@ const menu = [
     },
 ]
 const openMenu = ref(false)
-
-const { locale, locales } = useI18n()
-const availableLocales = computed(() => {
-    return locales.value.filter((i) => i.code !== locale.value)
-})
 </script>
 
 <template>
     <header>
-        <div class="absolute left-0 right-0 top-2 z-30 pt-14">
+        <div class="absolute left-0 right-0 top-2 z-30">
+            <LanguageSelector class="mb-6" />
             <LayoutHeaderMenu @toggle-menu="openMenu = !openMenu" openMenu />
         </div>
         <div class="relative z-50 overflow-hidden bg-black pt-2">
@@ -41,7 +37,9 @@ const availableLocales = computed(() => {
                 leave="transition-all duration-300 ease-out"
                 leave-from="transform opacity-100 max-h-[550px]"
                 leave-to="transform opacity-0 max-h-0">
-                <div class="pb-16 pt-14">
+                <LanguageSelector on-dark />
+
+                <div class="pb-16 pt-6">
                     <LayoutHeaderMenu
                         onDark
                         @toggle-menu="openMenu = !openMenu"
@@ -80,15 +78,7 @@ const availableLocales = computed(() => {
                                         class="font-display text-base font-semibold text-white">
                                         Canvia l'idioma
                                     </h2>
-                                    <div class="mt-10 flex gap-x-6">
-                                        <NuxtLink
-                                            class="uppercase text-white hover:text-coral-500"
-                                            v-for="locale in availableLocales"
-                                            :key="locale.code"
-                                            :to="switchLocalePath(locale.code)">
-                                            {{ locale.name }}
-                                        </NuxtLink>
-                                    </div>
+                                    <div class="mt-10 flex gap-x-6"></div>
                                 </div>
                             </div>
                         </div>
