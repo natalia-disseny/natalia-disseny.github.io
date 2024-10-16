@@ -1,5 +1,7 @@
 <script setup>
 import { TransitionRoot } from '@headlessui/vue'
+import { inject } from 'vue'
+const menuIsVisible = inject('menuIsVisible')
 
 const menu = [
     {
@@ -19,18 +21,17 @@ const menu = [
         route: '/about',
     },
 ]
-const openMenu = ref(false)
 </script>
 
 <template>
     <header>
         <div class="absolute left-0 right-0 top-2 z-30">
             <LanguageSelector class="mb-6" />
-            <LayoutHeaderMenu @toggle-menu="openMenu = !openMenu" openMenu />
+            <LayoutHeaderMenu />
         </div>
         <div class="relative z-50 overflow-hidden bg-black pt-2">
             <TransitionRoot
-                :show="openMenu"
+                :show="menuIsVisible"
                 enter="transition-all duration-300 ease-in"
                 enter-from="transform opacity-0 max-h-0"
                 enter-to="transform opacity-100 max-h-[550px]"
@@ -40,10 +41,7 @@ const openMenu = ref(false)
                 <LanguageSelector on-dark />
 
                 <div class="pb-16 pt-6">
-                    <LayoutHeaderMenu
-                        onDark
-                        @toggle-menu="openMenu = !openMenu"
-                        :open-menu="openMenu" />
+                    <LayoutHeaderMenu onDark />
                 </div>
 
                 <nav
@@ -53,6 +51,7 @@ const openMenu = ref(false)
                             <div class="mx-auto max-w-2xl lg:max-w-none">
                                 <div class="grid grid-cols-1 sm:grid-cols-2">
                                     <NuxtLink
+                                        @click="menuIsVisible = false"
                                         v-for="item in menu"
                                         class="group relative isolate -mx-6 bg-black px-6 py-10 before:w-px even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:pl-16"
                                         :to="localePath(item.route)"
@@ -74,11 +73,7 @@ const openMenu = ref(false)
                                 class="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                                 <ContactInfo on-dark />
                                 <div class="sm:pl-16">
-                                    <h2
-                                        class="font-display text-base font-semibold text-white">
-                                        Canvia l'idioma
-                                    </h2>
-                                    <div class="mt-10 flex gap-x-6"></div>
+                                    <Social on-dark />
                                 </div>
                             </div>
                         </div>

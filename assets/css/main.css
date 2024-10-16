@@ -28,4 +28,12 @@
     .btn-primary.--onDark {
         @apply hover:border-white;
     }
+
+    .btn-round {
+        @apply flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10 hover:bg-coral-50;
+    }
+
+    .btn-round.--onDark {
+        @apply text-white hover:bg-gray-800;
+    }
 }

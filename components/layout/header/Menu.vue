@@ -1,8 +1,11 @@
 <script setup>
+import { inject } from 'vue'
+
 defineProps({
     onDark: Boolean,
-    openMenu: ref,
 })
+
+const menuIsVisible = inject('menuIsVisible')
 </script>
 
 <template>
@@ -13,6 +16,7 @@ defineProps({
 
                 <div class="flex items-center gap-x-8">
                     <NuxtLink
+                        @click="menuIsVisible = false"
                         :class="{ '--onDark': onDark }"
                         :to="localePath('/contact')"
                         title="Contact"
@@ -21,7 +25,7 @@ defineProps({
                     </NuxtLink>
 
                     <button
-                        @click="$emit('toggleMenu')"
+                        @click="menuIsVisible = !menuIsVisible"
                         type="button"
                         aria-expanded="false"
                         :class="
@@ -32,7 +36,7 @@ defineProps({
                         <span
                             :class="onDark ? 'text-white' : 'text-gray-900'"
                             class="material-symbols-rounded bg-transparent text-[30px]">
-                            {{ openMenu ? 'close' : 'menu' }}
+                            {{ menuIsVisible ? 'close' : 'menu' }}
                         </span>
                     </button>
                 </div>

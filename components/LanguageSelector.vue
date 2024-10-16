@@ -10,14 +10,10 @@ const availableLocales = computed(() => {
 
 <template>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mr-2 mt-4 flex justify-end gap-x-6">
+        <div class="mt-4 flex justify-end gap-x-6">
             <NuxtLink
-                :class="
-                    onDark
-                        ? 'text-white hover:bg-gray-800'
-                        : 'hover:bg-coral-50'
-                "
-                class="h-10 w-10 rounded-full text-center align-middle uppercase leading-10"
+                :class="{ '--onDark': onDark }"
+                class="btn-round"
                 v-for="locale in availableLocales"
                 :key="locale.code"
                 :to="switchLocalePath(locale.code)">

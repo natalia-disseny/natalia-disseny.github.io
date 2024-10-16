@@ -53,10 +53,11 @@
     },
     "contact": {
         "eyebrow": "Escriu-me",
-        "heading": "I treballem junts!",
+        "heading": "I treballem juntes!",
         "subheading": "Estic desitjant conèixer-te",
 
-        "addressTitle": "La meva \"oficina\"",
+        "addressTitle": "La meva oficina",
+        "follow": "Segueix-me a les xarxes",
 
         "form": {
             "name": "nom",

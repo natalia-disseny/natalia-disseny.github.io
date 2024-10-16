@@ -1,8 +1,11 @@
 <script setup>
-const localePath = useLocalePath()
+import { inject } from 'vue'
+
 defineProps({
     onDark: Boolean,
 })
+
+const menuIsVisible = inject('menuIsVisible')
 
 const Nfill = '#005252'
 const Dfill = '#008080'
@@ -10,6 +13,7 @@ const logoSize = 50
 </script>
 <template>
     <NuxtLink
+        @click="menuIsVisible = false"
         :to="localePath('/')"
         title="Home"
         class="flex items-center gap-10">
