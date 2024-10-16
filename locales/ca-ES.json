@@ -33,20 +33,20 @@
         },
         "services": {
             "eyebrow": "Serveis que ofereixo",
-            "heading": "Expert Web Design, UX/UI<br/> and More",
-            "subheading": "Whether you're building a new website or enhancing user experiences, I provide expert support to bring your vision to life across all devices.",
+            "heading": "Disseny web excepcional, UX/UI i més",
+            "subheading": "Tant si estàs creant un nou lloc web com millorant les experiències d'usuari, ofereixo suport expert per donar vida a la teva visió en tots els dispositius.",
             "stats": [
                 {
-                    "description": "<strong>Responsive and UX/UI Design Web Design</strong></br/> Creating beautiful, user-friendly websites with intuitive user experiences that look great on any device."
+                    "description": "<strong>Disseny web responsive i UX/UI</strong></br/> Creant llocs web atractius i fàcils d'usar amb experiències d'usuari intuïtives que es veuen perfectes en qualsevol dispositiu."
                 },
                 {
-                    "description": "<strong>E-commerce Solutions</strong><br/> Building online stores that are both functional and visually appealing."
+                    "description": "<strong>Solucions de e-commerce</strong><br/> Creant botigues en línia que són tant funcionals com visualment atractives."
                 },
                 {
-                    "description": "<strong>Website Maintenance</strong><br/> Keeping your website up-to-date and running smoothly."
+                    "description": "<strong>Manteniment de pàgines web</strong><br/> Mantenint el teu lloc web actualitzat i funcionant sense problemes."
                 },
                 {
-                    "description": "<strong>Non-Profit Web Design</strong><br/> Helping non-profits reach their goals with effective, engaging web design."
+                    "description": "<strong>Disseny solidari</strong><br/> Ajudant les organitzacions sense ànim de lucre a assolir els seus objectius amb un disseny web efectiu i atractiu."
                 }
             ]
         }
