@@ -1,5 +1,6 @@
 {
     "about": {
+        "title": "Tell me about your project",
         "intro": {
             "eyebrow": "A little about me",
             "heading": "My strength is adaptability",
@@ -9,19 +10,55 @@
         },
         "goals": {
             "eyebrow": "My values",
-            "heading": "xxx",
-            "subheading": "xxx",
-            "description": "xxx",
+            "heading": "Small steps lead to great results",
+            "subheading": "With these goals in mind, I strive to create websites that not only look impressive but also make a difference.",
             "stats": [
-                "<strong>Empowering local businesses</strong><br/> An online presence with user-friendly, responsive designs to reflect your unique brand and attract the ideal customers",
-                "<strong>Bridging the technology gap</strong><br/> Using the latest web technologies to help you stay competitive and relevant in today’s digital world",
-                "<strong>Customized solutions for all industries</strong><br/> Providing tailored web solutions that meet your business’s specific needs, with versatility and creativity",
-                "<strong>Supporting non-profit organizations</strong><br/> Working with non-profits too, helping them reach a wider audience and achieve their missions",
-                "<strong>Attracting a younger audience</strong><br/> Designs are aimed at appealing to a younger, technology-active demographic, driving more traffic and engagement"
+                {
+                    "title": "Empowering local businesses",
+                    "description": "An online presence with user-friendly, responsive designs to reflect your unique brand and attract the ideal customers"
+                },
+                {
+                    "title": "Bridging the technology gap",
+                    "description": "Using the latest web technologies to help you stay competitive and relevant in today’s digital world"
+                },
+                {
+                    "title": "Customized solutions for all industries",
+                    "description": "Providing tailored web solutions that meet your business’s specific needs, with versatility and creativity"
+                },
+                {
+                    "title": "Supporting non-profit organizations",
+                    "description": "Working with non-profits too, helping them reach a wider audience and achieve their missions"
+                },
+                {
+                    "title": "Attracting a younger audience",
+                    "description": "Designs are aimed at appealing to a younger, technology-active demographic, driving more traffic and engagement"
+                }
+            ]
+        },
+        "services": {
+            "eyebrow": "Services I offer",
+            "heading": "Expert Web Design, UX/UI<br/> and More",
+            "subheading": "Whether you're building a new website or enhancing user experiences, I provide expert support to bring your vision to life across all devices.",
+            "stats": [
+                {
+                    "description": "<strong>Responsive and UX/UI Design Web Design</strong></br/> Creating beautiful, user-friendly websites with intuitive user experiences that look great on any device."
+                },
+                {
+                    "description": "<strong>E-commerce Solutions</strong><br/> Building online stores that are both functional and visually appealing."
+                },
+                {
+                    "description": "<strong>Website Maintenance</strong><br/> Keeping your website up-to-date and running smoothly."
+                },
+                {
+                    "description": "<strong>Non-Profit Web Design</strong><br/> Helping non-profits reach their goals with effective, engaging web design."
+                }
             ]
         }
     },
     "contact": {
+        "cta": "Say hi!",
+        "description": "Tell me about your project",
+
         "eyebrow": "Talk to me",
         "heading": "And let's work together!",
         "subheading": "I can’t wait to know you",
@@ -33,5 +70,6 @@
             "company": "company",
             "message": "message"
         }
-    }
+    },
+    "license": "This work is licensed under"
 }

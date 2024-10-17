@@ -15,7 +15,7 @@ const currentDate = new Date()
             class="border-neutral-950/10 mb-20 flex flex-col flex-wrap items-center gap-x-6 gap-y-4 border-t pt-12 md:flex-row md:justify-between">
             <Logo />
             <div class="text-xs">
-                © {{ currentDate.getFullYear() }} - This work is licensed under
+                © {{ currentDate.getFullYear() }} - {{ $t('license') }}
                 <NuxtLink
                     class="underline hover:text-coral-500 hover:no-underline"
                     to="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"

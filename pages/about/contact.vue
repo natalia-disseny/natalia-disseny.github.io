@@ -8,12 +8,14 @@ const localePath = useLocalePath()
             <div
                 class="rounded-[40px] bg-gray-900 py-24 text-white sm:mt-32 lg:mt-40 lg:py-32">
                 <div class="mx-auto max-w-4xl">
-                    <h2 class="mb-10 text-4xl">Parla'm del teu projecte</h2>
+                    <h2 class="mb-10 text-4xl">
+                        {{ $t('contact.description') }}
+                    </h2>
 
                     <NuxtLink
                         :to="localePath('/contact')"
                         class="btn-primary --onDark">
-                        Digues hola!
+                        {{ $t('contact.cta') }}
                     </NuxtLink>
 
                     <div class="mt-10 w-1/2 border-t border-white/10 pt-10">

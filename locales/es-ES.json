@@ -8,14 +8,52 @@
             "stats": ["Años de experiencia", "Proyectos realizados con éxito"]
         },
         "goals": {
-            "eyebrow": "xxx",
-            "heading": "xxx",
-            "subheading": "xxx",
-            "description": "xxx",
-            "stats": ["xxx", "xxx", "xxx", "xxx", "xxx"]
+            "eyebrow": "Mis objetivos",
+            "heading": "Pequeños pasos llevan a grandes resultados",
+            "subheading": "Con estos objetivos en mente, me esfuerzo por crear webs que no solo se vean impresionantes, sino que también marquen la diferencia.",
+            "stats": [
+                {
+                    "title": "Potenciar las empresas locales",
+                    "description": "Una presencia online con diseños fáciles de usar y adaptativos para reflejar tu marca y atraer a los clientes ideales."
+                },
+                {
+                    "title": "Reducir la brecha tecnológica",
+                    "description": "Utilizando las últimas tecnologías web para ayudarte a mantener una marca competitiva y relevante."
+                },
+                {
+                    "title": "Soluciones personalizadas",
+                    "description": "Proporcionando soluciones web a medida específicas para tu negocio, con versatilidad y creatividad."
+                },
+                {
+                    "title": "Soporte a organizaciones y entidades",
+                    "description": "También trabajo con entidades sin ánimo de lucro, ayudándolas a llegar a un público más amplio y a alcanzar su objetivo."
+                }
+            ]
+        },
+        "services": {
+            "eyebrow": "Servicios que ofrezco",
+            "heading": "Diseño web excepcional, UX/UI y más",
+            "subheading": "Tanto si estás creando un nuevo sitio web como mejorando las experiencias de usuario, ofrezco soporte experto para dar vida a tu visión en todos los dispositivos.",
+            "stats": [
+                {
+                    "description": "<strong>Diseño web responsive y UX/UI</strong></br/> Creando sitios web atractivos y fáciles de usar con experiencias de usuario intuitivas que se ven perfectas en cualquier dispositivo."
+                },
+                {
+                    "description": "<strong>Soluciones de e-commerce</strong><br/> Creando tiendas en línea que son tanto funcionales como visualmente atractivas."
+                },
+                {
+                    "description": "<strong>Mantenimiento de págines web</strong><br/> Manteniendo tu sitio web actualizado y funcionando sin problemas."
+                },
+                {
+                    "description": "<strong>Diseño solidario</strong><br/> Ayudando a las organizaciones sin ánimo de lucro a alcanzar sus objetivos con un diseño web efectivo y atractivo."
+                }
+            ]
         }
     },
     "contact": {
+        "cta": "Dime hola!",
+        "description": "Háblame de tu proyecto.",
+
         "eyebrow": "Escríbeme",
         "heading": "Y trabajemos juntas!",
         "subheading": "Estoy deseando conocerte",
@@ -27,5 +65,7 @@
             "company": "empresa",
             "message": "mensaje"
         }
-    }
+    },
+
+    "license": "Esta obra tiene la licencia"
 }

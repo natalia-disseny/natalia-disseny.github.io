@@ -1,6 +1,5 @@
 {
     "about": {
-        "cta": "Sobre mi",
         "intro": {
             "eyebrow": "Una mica sobre mi",
             "heading": "L'adaptabilitat és la meva <br/>fortalesa",
@@ -52,6 +51,9 @@
         }
     },
     "contact": {
+        "cta": "Digues hola!",
+        "description": "Parla'm del teu projecte",
+
         "eyebrow": "Escriu-me",
         "heading": "I treballem juntes!",
         "subheading": "Estic desitjant conèixer-te",
@@ -64,5 +66,6 @@
             "company": "empresa",
             "message": "missatge"
         }
-    }
+    },
+    "license": "Aquesta obra té la llicència"
 }
