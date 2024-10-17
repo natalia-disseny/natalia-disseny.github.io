@@ -51,19 +51,20 @@
         }
     },
     "contact": {
-        "cta": "Dime hola!",
-        "description": "Háblame de tu proyecto.",
-
         "eyebrow": "Escríbeme",
         "heading": "Y trabajemos juntas!",
         "subheading": "Estoy deseando conocerte",
 
         "addressTitle": "Mi \"oficina\"",
+        "cta": "Dime hola!",
+        "description": "Háblame de tu proyecto.",
+        "follow": "Sígueme en las redes",
 
         "form": {
             "name": "nombre",
             "company": "empresa",
-            "message": "mensaje"
+            "message": "mensaje",
+            "submit": "Empieza el viaje!"
         }
     },
 

@@ -51,20 +51,20 @@
         }
     },
     "contact": {
-        "cta": "Digues hola!",
-        "description": "Parla'm del teu projecte",
-
         "eyebrow": "Escriu-me",
         "heading": "I treballem juntes!",
         "subheading": "Estic desitjant conèixer-te",
 
         "addressTitle": "La meva oficina",
+        "cta": "Digues hola!",
+        "description": "Parla'm del teu projecte",
         "follow": "Segueix-me a les xarxes",
 
         "form": {
             "name": "nom",
             "company": "empresa",
-            "message": "missatge"
+            "message": "missatge",
+            "submit": "Comença el viatge!"
         }
     },
     "license": "Aquesta obra té la llicència"

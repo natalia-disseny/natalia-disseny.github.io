@@ -59,7 +59,7 @@ const sendEmail = () => {
             <div class="mt-8 flex justify-end">
                 <input
                     type="submit"
-                    value="Let’s work together"
+                    :value="$t('contact.form.submit')"
                     class="btn-primary" />
             </div>
         </form>

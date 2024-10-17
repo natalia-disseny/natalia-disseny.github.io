@@ -22,7 +22,7 @@ const menuIsVisible = inject('menuIsVisible')
                     :to="localePath('/contact')"
                     title="Contact"
                     class="btn-primary sm:hidden">
-                    {{ $t('contact.eyebrow') }}
+                    {{ $t('contact.cta') }}
                 </NuxtLink>
 
                 <div class="flex items-center gap-x-8">
@@ -32,7 +32,7 @@ const menuIsVisible = inject('menuIsVisible')
                         :to="localePath('/contact')"
                         title="Contact"
                         class="btn-primary hidden sm:block">
-                        {{ $t('contact.eyebrow') }}
+                        {{ $t('contact.cta') }}
                     </NuxtLink>
 
                     <button

@@ -56,19 +56,20 @@
         }
     },
     "contact": {
-        "cta": "Say hi!",
-        "description": "Tell me about your project",
-
         "eyebrow": "Talk to me",
         "heading": "And let's work together!",
         "subheading": "I can’t wait to know you",
 
         "addressTitle": "My \"office\"",
+        "cta": "Say hi!",
+        "description": "Tell me about your project",
+        "follow": "Follow me",
 
         "form": {
             "name": "name",
             "company": "company",
-            "message": "message"
+            "message": "message",
+            "submit": "Start the Journey!"
         }
     },
     "license": "This work is licensed under"
