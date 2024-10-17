@@ -1,5 +1,7 @@
 {
     "about": {
+        "button": "Sobre mi",
+
         "intro": {
             "eyebrow": "Una mica sobre mi",
             "heading": "L'adaptabilitat és la meva <br/>fortalesa",
@@ -51,6 +53,8 @@
         }
     },
     "contact": {
+        "button": "Contacta amb mi",
+
         "eyebrow": "Escriu-me",
         "heading": "I treballem juntes!",
         "subheading": "Estic desitjant conèixer-te",

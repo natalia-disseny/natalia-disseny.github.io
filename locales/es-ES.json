@@ -1,5 +1,7 @@
 {
     "about": {
+        "button": "Sobre mí",
+
         "intro": {
             "eyebrow": "Un poco sobre mí",
             "heading": "La adaptabilidad es mi fortaleza",
@@ -51,6 +53,8 @@
         }
     },
     "contact": {
+        "button": "Contacta conmigo",
+
         "eyebrow": "Escríbeme",
         "heading": "Y trabajemos juntas!",
         "subheading": "Estoy deseando conocerte",

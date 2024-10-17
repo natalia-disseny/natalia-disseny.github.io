@@ -1,5 +1,7 @@
 {
     "about": {
+        "button": "About me",
+
         "title": "Tell me about your project",
         "intro": {
             "eyebrow": "A little about me",
@@ -56,6 +58,8 @@
         }
     },
     "contact": {
+        "button": "Let's talk",
+
         "eyebrow": "Talk to me",
         "heading": "And let's work together!",
         "subheading": "I can’t wait to know you",

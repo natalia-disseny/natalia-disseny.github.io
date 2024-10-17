@@ -5,20 +5,20 @@ const menuIsVisible = inject('menuIsVisible')
 
 const menu = [
     {
-        title: 'Our Work',
+        button: 'about.button',
         route: '/about',
     },
-    {
-        title: 'Our Work',
-        route: '/about',
+    /* {
+        button: 'portfolio.button',
+        route: '/portfolio',
     },
     {
-        title: 'Our Work',
-        route: '/about',
-    },
+        button: 'blog.button',
+        route: '/blog',
+    }, */
     {
-        title: 'Our Work',
-        route: '/about',
+        button: 'contact.button',
+        route: '/contact',
     },
 ]
 </script>
@@ -53,7 +53,7 @@ const menu = [
                                         v-for="item in menu"
                                         class="group relative isolate -mx-6 bg-black px-6 py-10 before:w-px even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:pl-16"
                                         :to="localePath(item.route)"
-                                        >{{ item.title
+                                        >{{ $t(item.button)
                                         }}<span
                                             class="absolute inset-y-0 -z-10 w-screen bg-coral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100"></span
                                     ></NuxtLink>
