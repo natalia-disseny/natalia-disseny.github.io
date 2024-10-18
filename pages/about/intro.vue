@@ -21,10 +21,10 @@ const appConfig = useAppConfig()
                     loading="lazy"
                     class="w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
                     srcset="
-                        https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=1920&q=75 1x,
-                        https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=1920&q=75 2x
+                        /public/profilePicture.jpg 1x,
+                        /public/profilePicture.jpg 2x
                     "
-                    src="https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=1920&q=75" />
+                    src="/public/profilePicture.jpg" />
                 <div
                     class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
                     <p
