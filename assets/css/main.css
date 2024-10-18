@@ -36,4 +36,8 @@
     .btn-round.--onDark {
         @apply text-white hover:bg-gray-800;
     }
+
+    .portfolioWork {
+        @apply relative grid grid-cols-3 gap-x-8 gap-y-8 py-16 before:absolute before:left-0 before:top-0 before:h-px before:w-6 before:bg-gray-900 after:absolute after:left-8 after:right-0 after:top-0 after:h-px after:bg-gray-100;
+    }
 }

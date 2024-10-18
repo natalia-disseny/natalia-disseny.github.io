@@ -20,10 +20,6 @@ const appConfig = useAppConfig()
                     alt=""
                     loading="lazy"
                     class="w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                    srcset="
-                        /public/profilePicture.jpg 1x,
-                        /public/profilePicture.jpg 2x
-                    "
                     src="/public/profilePicture.jpg" />
                 <div
                     class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">

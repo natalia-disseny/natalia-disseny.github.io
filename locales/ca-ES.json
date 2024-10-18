@@ -53,7 +53,7 @@
         }
     },
     "contact": {
-        "button": "Contacta amb mi",
+        "button": "Contacta",
 
         "eyebrow": "Escriu-me",
         "heading": "I treballem juntes!",
@@ -70,6 +70,19 @@
             "message": "missatge",
             "submit": "Comença el viatge!"
         }
+    },
+    "portfolio": {
+        "eyebrow": "Portfolio",
+        "heading": "Solucions funcionals per a problemes reals",
+        "subheading": "Crec en l'eficiència i en maximitzar els recursos per oferir el millor valor als meus clients. La principal manera de fer-ho és reutilitzant les mateixes tècniques que ja han funcionat durant l'última dècada.",
+
+        "works": [
+            {
+                "occupation": "Initial design, setup and full development",
+                "title": "Hire the best IT pro talent easier. Every time.",
+                "description": "iTalentUp is a tool that helps you hire the right candidate and make your selection process quicker, smarter and more objective. <br/>As a developer and designer behind iTalentUp, my goal was to build a platform that fundamentally transforms the hiring process. I wanted to tackle a key challenge that many recruiters face: making smarter, more objective hiring decisions without the influence of unconscious bias. iTalentUp is designed to streamline and speed up candidate selection by utilizing data-driven insights to guide recruiters in choosing the best fit for their team.<br/>Developing this tool was all about creating a smarter and more efficient way for teams to find top-tier talent and never overlook exceptional candidates again."
+            }
+        ]
     },
     "license": "Aquesta obra té la llicència"
 }

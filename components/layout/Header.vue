@@ -8,11 +8,11 @@ const menu = [
         button: 'about.button',
         route: '/about',
     },
-    /* {
-        button: 'portfolio.button',
+    {
+        button: 'portfolio.eyebrow',
         route: '/portfolio',
     },
-    {
+    /*{
         button: 'blog.button',
         route: '/blog',
     }, */
