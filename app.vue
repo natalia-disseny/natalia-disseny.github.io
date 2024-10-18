@@ -2,7 +2,15 @@
 import { provide, ref } from 'vue'
 
 provide('notification', ref({ category: 'info', description: '' }))
-provide('menuIsVisible', ref(false))
+
+const menuIsVisible = ref(false)
+provide('menuIsVisible', menuIsVisible)
+// Force scroll to top of page when menu is opened
+watch(menuIsVisible, async (newVisibility) => {
+    if (newVisibility) {
+        window.scrollTo(0, 0)
+    }
+})
 </script>
 
 <template>
