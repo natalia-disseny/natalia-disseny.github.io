@@ -3,9 +3,9 @@ const appConfig = useAppConfig()
 </script>
 
 <template>
-    <div>
-        <BoxedDiv class="grid grid-cols-3 items-start gap-10">
-            <div class="col-span-2">
+    <BoxedDiv>
+        <div class="grid grid-cols-3 items-start gap-10">
+            <div class="col-span-3 sm:col-span-2">
                 <Heading
                     :eyebrow="$t('about.intro.eyebrow')"
                     :heading="$t('about.intro.heading')"
@@ -15,7 +15,8 @@ const appConfig = useAppConfig()
                     v-html="$t('about.intro.description')" />
             </div>
 
-            <div class="group relative overflow-hidden rounded-3xl bg-gray-100">
+            <div
+                class="group relative col-span-3 overflow-hidden rounded-3xl bg-gray-100 sm:col-span-1">
                 <img
                     alt=""
                     loading="lazy"
@@ -32,19 +33,19 @@ const appConfig = useAppConfig()
                     </p>
                 </div>
             </div>
-        </BoxedDiv>
+        </div>
+    </BoxedDiv>
 
-        <Stats
-            class="mx-auto mt-16 max-w-7xl px-6 lg:px-8"
-            :items="[
-                {
-                    name: $t('about.intro.stats.0'),
-                    value: '10',
-                },
-                {
-                    name: $t('about.intro.stats.1'),
-                    value: '+50',
-                },
-            ]" />
-    </div>
+    <Stats
+        class="mx-auto mt-16 max-w-7xl px-6 lg:px-8"
+        :items="[
+            {
+                name: $t('about.intro.stats.0'),
+                value: '10',
+            },
+            {
+                name: $t('about.intro.stats.1'),
+                value: '+50',
+            },
+        ]" />
 </template>

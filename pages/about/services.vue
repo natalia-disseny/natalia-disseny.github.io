@@ -1,13 +1,13 @@
 <template>
-    <div class="mx-auto my-24 max-w-7xl px-6 sm:my-32 lg:px-8">
+    <BoxedDiv>
         <Heading
             :eyebrow="$t('about.services.eyebrow')"
             :heading="$t('about.services.heading')"
             :subheading="$t('about.services.subheading')" />
 
         <Stats
-            cols="2"
-            class="mx-auto mt-16 max-w-7xl"
+            :cols="2"
+            class="mx-auto my-16 max-w-7xl"
             :items="[
                 {
                     name: $t('about.services.stats.0.description'),
@@ -26,5 +26,5 @@
                     icon: 'volunteer_activism',
                 },
             ]" />
-    </div>
+    </BoxedDiv>
 </template>

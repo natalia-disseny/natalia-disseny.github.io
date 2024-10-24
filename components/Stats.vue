@@ -31,7 +31,7 @@ defineProps<{
                     :class="[
                         onDark ? 'text-white' : 'text-gray-900',
                         {
-                            'self-center': stat.icon,
+                            'hidden self-center lg:block': stat.icon,
                         },
                     ]"
                     class="text-3xl font-semibold">

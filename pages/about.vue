@@ -6,10 +6,8 @@ import Contact from './about/contact.vue'
 </script>
 
 <template>
-    <div>
-        <Intro />
-        <Goals />
-        <Services />
-        <Contact />
-    </div>
+    <Intro />
+    <Goals />
+    <Services />
+    <Contact />
 </template>
