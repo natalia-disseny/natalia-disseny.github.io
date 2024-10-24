@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { provide, ref } from 'vue'
 
+const { locale } = useI18n()
+
 provide('notification', ref({ category: 'info', description: '' }))
 
 const menuIsVisible = ref(false)
@@ -11,11 +13,13 @@ watch(menuIsVisible, async (newVisibility) => {
         window.scrollTo(0, 0)
     }
 })
+const title = ref('Hello World')
 </script>
 
 <template>
     <div>
-        <Html class="h-full bg-gray-900 text-base antialiased" />
+        <Html class="h-full bg-gray-900 text-base antialiased" :lang="locale" />
+        <Title>{{ useAppConfig().contact.company }}</Title>
 
         <Body class="flex min-h-full flex-col">
             <LayoutHeader />

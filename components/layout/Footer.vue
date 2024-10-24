@@ -1,11 +1,5 @@
 <script setup>
-const licenseImages = [
-    'https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1',
-    'https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1',
-    'https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1',
-    'https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1',
-]
-
+const licenses = ['cc', 'by', 'nc', 'sa']
 const currentDate = new Date()
 </script>
 
@@ -25,9 +19,10 @@ const currentDate = new Date()
                     <div
                         class="mt-2 flex justify-center gap-x-2 md:justify-end">
                         <img
-                            v-for="image in licenseImages"
-                            class="h-6"
-                            :src="image" />
+                            :title="`License ${license}`"
+                            v-for="license in licenses"
+                            class="h-6 w-6"
+                            :src="`https://mirrors.creativecommons.org/presskit/icons/${license}.svg?ref=chooser-v1`" />
                     </div>
                 </NuxtLink>
             </div>

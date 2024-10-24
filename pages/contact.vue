@@ -3,6 +3,10 @@ import ContactForm from './contact/form.vue'
 </script>
 
 <template>
+    <Title>{{
+        $t('contact.button') + ' - ' + useAppConfig().contact.company
+    }}</Title>
+
     <BoxedDiv>
         <Heading
             :eyebrow="$t('contact.eyebrow')"

@@ -9,6 +9,10 @@ const works = [
 </script>
 
 <template>
+    <Title>{{
+        $t('portfolio.eyebrow') + ' - ' + useAppConfig().contact.company
+    }}</Title>
+
     <BoxedDiv>
         <Heading
             :eyebrow="$t('portfolio.eyebrow')"

@@ -6,6 +6,10 @@ import Contact from './about/contact.vue'
 </script>
 
 <template>
+    <Title>{{
+        $t('about.button') + ' - ' + useAppConfig().contact.company
+    }}</Title>
+
     <Intro />
     <Goals />
     <Services />
