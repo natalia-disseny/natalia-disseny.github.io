@@ -57,10 +57,12 @@ const sendEmail = () => {
             </div>
 
             <div class="mt-8 flex justify-end">
-                <input
-                    type="submit"
-                    :value="$t('contact.form.submit')"
-                    class="btn-primary" />
+                <div class="btn-primary">
+                    <input
+                        type="submit"
+                        class="cursor-pointer"
+                        :value="$t('contact.form.submit')" />
+                </div>
             </div>
         </form>
     </div>

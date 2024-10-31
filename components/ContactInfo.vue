@@ -24,7 +24,7 @@ const appConfig = useAppConfig()
                 <address class="text-sm not-italic">
                     <br />
                     <NuxtLink
-                        class="underline hover:text-coral-500 hover:no-underline"
+                        class="inlineLink"
                         :to="
                             'tel:+34' +
                             appConfig.contact.phone.replace(/\s/g, '')
@@ -32,7 +32,7 @@ const appConfig = useAppConfig()
                         >+34 {{ appConfig.contact.phone }}</NuxtLink
                     ><br />
                     <NuxtLink
-                        class="underline hover:text-coral-500 hover:no-underline"
+                        class="inlineLink"
                         :to="'mailto:' + appConfig.contact.email"
                         >{{ appConfig.contact.email }}</NuxtLink
                     >

@@ -11,20 +11,18 @@ const currentDate = new Date()
             <div class="text-xs">
                 © {{ currentDate.getFullYear() }} - {{ $t('license') }}
                 <NuxtLink
-                    class="underline hover:text-coral-500 hover:no-underline"
+                    class="inlineLink"
                     to="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
                     target="_blank"
                     >CC BY-NC-SA 4.0
-
-                    <div
-                        class="mt-2 flex justify-center gap-x-2 md:justify-end">
-                        <img
-                            :title="`License ${license}`"
-                            v-for="license in licenses"
-                            class="h-6 w-6"
-                            :src="`https://mirrors.creativecommons.org/presskit/icons/${license}.svg?ref=chooser-v1`" />
-                    </div>
                 </NuxtLink>
+                <div class="mt-2 flex justify-center gap-x-2 md:justify-end">
+                    <img
+                        :title="`License ${license}`"
+                        v-for="license in licenses"
+                        class="h-6 w-6"
+                        :src="`https://mirrors.creativecommons.org/presskit/icons/${license}.svg?ref=chooser-v1`" />
+                </div>
             </div>
         </div>
     </footer>

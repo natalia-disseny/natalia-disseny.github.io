@@ -14,7 +14,7 @@ const localePath = useLocalePath()
 
                     <NuxtLink
                         :to="localePath('/contact')"
-                        class="btn-primary --onDark">
+                        class="btn-primary --onDark z-10">
                         {{ $t('contact.cta') }}
                     </NuxtLink>
 

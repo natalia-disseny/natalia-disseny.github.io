@@ -49,6 +49,17 @@ export default {
                 800: '#198c8c',
                 900: '#008080',
             },
+            lemon: {
+                100: '#FFFAE3',
+                200: '#FFF5C7',
+                300: '#FEF0AB',
+                400: '#FEEB8F',
+                500: '#FDE673',
+                600: '#FCE158',
+                700: '#FBDC3D',
+                800: '#FAD621',
+                900: '#F9D106',
+            },
             white: '#ffffff',
             black: '#333333',
             // Status colors

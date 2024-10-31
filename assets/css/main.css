@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .router-link-active:not(.btn-primary):hover {
-    color: initial !important;
-    cursor: default;
-} */
-
 @layer base {
     body {
         @apply font-body;
@@ -22,22 +17,38 @@
 
 @layer components {
     .btn-primary {
-        @apply inline-block rounded-full border border-coral-900 bg-coral-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform hover:scale-105 hover:cursor-pointer hover:border hover:bg-white hover:text-coral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:text-base;
+        @apply relative cursor-pointer rounded-full border-2 border-black px-4 py-2.5 font-medium transition-all before:contents;
+    }
+    .btn-primary:before {
+        @apply bg-lemon-300 absolute left-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-x-1/2 -translate-y-1/2 rounded-full transition-all ease-in-out;
+    }
+    .btn-primary:hover:before {
+        @apply bg-lemon-400 left-[44%] top-[64%] w-[104%];
+    }
+    .btn-primary:focus:before {
+        @apply bg-lemon-500;
     }
 
     .btn-primary.--onDark {
-        @apply hover:border-white;
+        @apply text-black hover:before:left-1/2 hover:before:top-1/2 hover:before:h-[128%] hover:before:w-[110%];
     }
 
     .btn-round {
-        @apply flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10 hover:bg-coral-50;
+        @apply hover:bg-lemon-300 focus:bg-lemon-500 flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10;
     }
-
     .btn-round.--onDark {
-        @apply text-white hover:bg-gray-800;
+        @apply hover:bg-lemon-400 focus:bg-lemon-500 font-medium text-white hover:text-black focus:text-black;
     }
 
     .portfolioWork {
         @apply relative grid grid-cols-3 gap-x-8 gap-y-8 py-16 before:absolute before:left-0 before:top-0 before:h-px before:w-6 before:bg-gray-900 after:absolute after:left-8 after:right-0 after:top-0 after:h-px after:bg-gray-100;
+    }
+
+    .inlineLink {
+        @apply hover:bg-lemon-400 relative underline before:contents hover:no-underline;
+    }
+    .inlineLink:hover:before {
+        @apply bg-lemon-400 absolute left-1/2 top-0 -z-10 block h-full -translate-x-1/2;
+        width: calc(100% + 8px);
     }
 }
