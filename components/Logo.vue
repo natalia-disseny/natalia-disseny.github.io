@@ -24,12 +24,14 @@ const logoSize = 50
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
-                :class="[onDark ? 'fill-white' : 'fill-teal-900']"
+                class="fill-teal-900"
+                :class="[onDark ? 'fill-coral-400' : 'fill-coral-900']"
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M0 372H248L0 124V372Z" />
             <path
-                :class="[onDark ? 'fill-white' : 'fill-teal-400']"
+                class="fill-teal-400"
+                :class="[onDark ? 'fill-teal-400' : 'fill-teal-900']"
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M248 496C384.967 496 496 384.967 496 248C496 111.033 384.967 0 248 0V496Z" />

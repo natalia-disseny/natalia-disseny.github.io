@@ -37,7 +37,7 @@
         @apply hover:bg-lemon-300 focus:bg-lemon-500 flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10;
     }
     .btn-round.--onDark {
-        @apply hover:bg-lemon-400 focus:bg-lemon-500 font-medium text-white hover:text-black focus:text-black;
+        @apply hover:bg-lemon-400 focus:bg-lemon-500 font-medium text-white hover:fill-black hover:text-black focus:text-black;
     }
 
     .portfolioWork {
@@ -50,5 +50,8 @@
     .inlineLink:hover:before {
         @apply bg-lemon-400 absolute left-1/2 top-0 -z-10 block h-full -translate-x-1/2;
         width: calc(100% + 8px);
+    }
+    .inlineLink.--onDark {
+        @apply font-medium hover:text-black;
     }
 }
