@@ -13,7 +13,6 @@ watch(menuIsVisible, async (newVisibility) => {
         window.scrollTo(0, 0)
     }
 })
-const title = ref('Hello World')
 </script>
 
 <template>
