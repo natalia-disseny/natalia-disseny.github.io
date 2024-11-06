@@ -2,7 +2,6 @@
 const works = [
     {
         name: 'iTalentUp',
-        url: 'https://www.italentup.com/',
         date: '2023-24',
     },
 ]
@@ -28,18 +27,16 @@ const works = [
                         class="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                         <div
                             class="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                            <a :href="project.url" target="_blank">
-                                <img
-                                    alt=""
-                                    loading="lazy"
-                                    width="36"
-                                    height="36"
-                                    decoding="async"
-                                    data-nimg="1"
-                                    class="h-16 w-16 flex-none grayscale transition-all hover:grayscale-0"
-                                    style="color: transparent"
-                                    :src="`/projects/${project.name}/logo.png`" />
-                            </a>
+                            <img
+                                alt=""
+                                loading="lazy"
+                                width="36"
+                                height="36"
+                                decoding="async"
+                                data-nimg="1"
+                                class="h-16 w-16 flex-none grayscale"
+                                style="color: transparent"
+                                :src="`/projects/${project.name}/logo.png`" />
                             <h3
                                 class="mt-6 text-sm font-semibold text-black sm:mt-0 lg:mt-8">
                                 {{ project.name }}
@@ -112,4 +109,6 @@ const works = [
             </div>
         </div>
     </div>
+
+    <ContactBox />
 </template>

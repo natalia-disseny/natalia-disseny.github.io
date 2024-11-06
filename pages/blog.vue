@@ -11,4 +11,6 @@
             :heading="$t('blog.heading')"
             :subheading="$t('blog.subheading')" />
     </BoxedDiv>
+
+    <ContactBox />
 </template>
