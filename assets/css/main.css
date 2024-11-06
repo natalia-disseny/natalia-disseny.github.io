@@ -20,17 +20,16 @@
         @apply relative cursor-pointer rounded-full border-2 border-black px-4 py-2.5 font-medium transition-all before:contents;
     }
     .btn-primary:before {
-        @apply absolute left-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-x-1/2 -translate-y-1/2 rounded-full bg-lemon-300 transition-all ease-in-out;
+        @apply absolute right-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-y-1/2 translate-x-1/2 rounded-full bg-lemon-300 transition-all ease-in-out;
     }
     .btn-primary:hover:before {
-        @apply left-[44%] top-[64%] w-[104%] bg-lemon-400;
+        @apply mr-2 mt-2 bg-lemon-400;
     }
     .btn-primary:focus:before {
         @apply bg-lemon-500;
     }
-
     .btn-primary.--onDark {
-        @apply text-black hover:before:left-1/2 hover:before:top-1/2 hover:before:h-[128%] hover:before:w-[110%];
+        @apply text-black hover:before:right-1/2 hover:before:top-1/2 hover:before:mr-0 hover:before:mt-0 hover:before:h-[128%] hover:before:w-[110%];
     }
 
     .btn-round {

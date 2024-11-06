@@ -12,11 +12,12 @@ const localePath = useLocalePath()
                         {{ $t('contact.description') }}
                     </h2>
 
-                    <NuxtLink
+                    <PrimaryButton
                         :to="localePath('/contact')"
-                        class="btn-primary --onDark z-10">
+                        :on-dark="true"
+                        class="z-10">
                         {{ $t('contact.cta') }}
-                    </NuxtLink>
+                    </PrimaryButton>
 
                     <div class="mt-10 w-1/2 border-t border-white/10 pt-10">
                         <ContactInfo onDark />

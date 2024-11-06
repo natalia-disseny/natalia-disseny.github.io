@@ -16,24 +16,24 @@ const menuIsVisible = inject('menuIsVisible')
             <div class="mt-6 flex items-center justify-between sm:mt-0">
                 <Logo :on-dark="onDark" />
 
-                <NuxtLink
+                <PrimaryButton
                     @click="menuIsVisible = false"
-                    :class="{ '--onDark': onDark }"
                     :to="localePath('/contact')"
                     title="Contact"
-                    class="btn-primary sm:hidden">
+                    class="sm:hidden"
+                    :onDark>
                     {{ $t('contact.cta') }}
-                </NuxtLink>
+                </PrimaryButton>
 
                 <div class="flex items-center gap-x-8">
-                    <NuxtLink
+                    <PrimaryButton
                         @click="menuIsVisible = false"
-                        :class="{ '--onDark': onDark }"
                         :to="localePath('/contact')"
                         title="Contact"
-                        class="btn-primary hidden sm:block">
+                        class="hidden sm:inline"
+                        :onDark>
                         {{ $t('contact.cta') }}
-                    </NuxtLink>
+                    </PrimaryButton>
 
                     <button
                         @click="menuIsVisible = !menuIsVisible"
