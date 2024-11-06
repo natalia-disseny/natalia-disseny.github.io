@@ -79,7 +79,15 @@
     "portfolio": {
         "eyebrow": "My work",
         "heading": "Proven solutions for real-world problems",
-        "subheading": "We believe in efficiency and maximizing our resources to provide the best value to our clients. The primary way we do that is by re-using the same five projects we’ve been developing for the past decade."
+        "subheading": "I believe in efficiency and maximizing resources to deliver the best value to my clients.",
+
+        "works": [
+            {
+                "occupation": "Initial design, setup and full development",
+                "title": "Hire the best IT pro talent easier",
+                "description": "iTalentUp is a tool that helps you hire the right candidate and make your selection process quicker, smarter and more objective. <br/>As a developer and designer behind iTalentUp, my goal was to build a platform that fundamentally transforms the hiring process. I wanted to tackle a key challenge that many recruiters face: making smarter, more objective hiring decisions without the influence of unconscious bias. iTalentUp is designed to streamline and speed up candidate selection by utilizing data-driven insights to guide recruiters in choosing the best fit for their team."
+            }
+        ]
     },
     "license": "This work is licensed under"
 }

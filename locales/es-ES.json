@@ -71,6 +71,19 @@
             "submit": "Empieza el viaje!"
         }
     },
+    "portfolio": {
+        "eyebrow": "Portfolio",
+        "heading": "Soluciones funcionales para problemas reales",
+        "subheading": "Creo en la eficiencia y en maximizar los recursos para ofrecer el mejor valor a mis clientes.",
+
+        "works": [
+            {
+                "occupation": "Diseño inicial, configuración y desarrollo completo",
+                "title": "Contrata al mejor talento de profesionales en TI de forma más fácil",
+                "description": "iTalentUp es una herramienta que te ayuda a contratar al candidato adecuado y a hacer que tu proceso de selección sea más rápido, inteligente y objetivo. <br/>Como desarrollador y diseñador detrás de iTalentUp, mi objetivo fue construir una plataforma que transformara fundamentalmente el proceso de contratación. Quería abordar un desafío clave al que muchos reclutadores se enfrentan: tomar decisiones de contratación más inteligentes y objetivas sin la influencia de sesgos inconscientes. iTalentUp está diseñado para optimizar y agilizar la selección de candidatos utilizando información basada en datos que guíe a los reclutadores a elegir la mejor opción para su equipo."
+            }
+        ]
+    },
 
     "license": "Esta obra tiene la licencia"
 }

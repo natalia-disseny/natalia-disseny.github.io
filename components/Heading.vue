@@ -15,7 +15,7 @@ defineProps<{
             }}</span
             ><span class="sr-only"> - </span
             ><span
-                class="mb-6 mt-4 block max-w-5xl font-display text-4xl font-bold [text-wrap:balance] sm:text-6xl sm:leading-[4.4rem]"
+                class="-ml-[0.2rem] mb-6 mt-4 block max-w-5xl font-display text-4xl font-bold [text-wrap:balance] sm:text-6xl sm:leading-[4.4rem]"
                 v-html="heading" />
         </h1>
         <div class="mb-16 max-w-3xl text-xl">

@@ -18,10 +18,6 @@ const works = [
             :eyebrow="$t('portfolio.eyebrow')"
             :heading="$t('portfolio.heading')"
             :subheading="$t('portfolio.subheading')" />
-
-        <h2 class="mb-10 mt-36 font-display text-2xl font-bold">
-            Casos d'estudi
-        </h2>
     </BoxedDiv>
 
     <div class="grid gap-y-36">
@@ -52,11 +48,12 @@ const works = [
 
                         <div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                             <p
-                                class="after:text-neutral-300 text-sm tracking-tight text-black after:ml-4 after:font-semibold after:content-['/'] lg:mt-2 lg:after:hidden">
-                                {{ $t(`portfolio.works[${index}].occupation`) }}
-                            </p>
-                            <p class="text-sm text-black lg:mt-2">
-                                <time datetime="2023-01">{{
+                                class="after:text-neutral-300 text-sm tracking-tight text-black after:ml-4 after:font-semibold after:content-['/'] lg:mt-2 lg:after:hidden"
+                                v-html="
+                                    $t(`portfolio.works[${index}].occupation`)
+                                " />
+                            <p class="text-sm text-teal-900 lg:mt-2">
+                                <time :datetime="project.date">{{
                                     project.date
                                 }}</time>
                             </p>
@@ -64,7 +61,8 @@ const works = [
                     </div>
 
                     <div class="col-span-full lg:col-span-2 lg:max-w-2xl">
-                        <p class="font-display text-4xl font-medium text-black">
+                        <p
+                            class="-ml-[0.2rem] font-display text-4xl font-medium text-black">
                             {{ $t(`portfolio.works[${index}].title`) }}
                         </p>
                         <div class="mt-6 space-y-6 text-base text-black">
