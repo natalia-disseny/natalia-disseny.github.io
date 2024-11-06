@@ -22,8 +22,8 @@ defineProps<{
                 class="relative flex gap-x-8 overflow-hidden pl-8 tracking-wide before:absolute before:left-0 before:top-0 before:h-8 before:w-1 after:absolute after:bottom-0 after:left-0 after:top-10 after:w-1"
                 :class="[
                     onDark
-                        ? 'before:bg-teal-100 after:bg-teal-800'
-                        : 'before:bg-teal-900 after:bg-teal-100',
+                        ? 'before:bg-coral-500 after:bg-coral-100'
+                        : 'before:bg-coral-900 after:bg-coral-100',
                     stat.icon ? 'flex-row' : 'flex-col',
                 ]">
                 <dd

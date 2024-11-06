@@ -12,10 +12,10 @@ const menu = [
         button: 'portfolio.eyebrow',
         route: '/portfolio',
     },
-    /*{
-        button: 'blog.button',
+    {
+        button: 'blog.eyebrow',
         route: '/blog',
-    }, */
+    },
     {
         button: 'contact.button',
         route: '/contact',

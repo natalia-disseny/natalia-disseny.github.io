@@ -24,7 +24,7 @@ const appConfig = useAppConfig()
                 <address class="text-sm not-italic">
                     <br />
                     <NuxtLink
-                        :class="{ '--onDark z-10': onDark }"
+                        :class="{ '--onDark': onDark }"
                         class="inlineLink"
                         :to="
                             'tel:+34' +
@@ -33,7 +33,7 @@ const appConfig = useAppConfig()
                         >+34 {{ appConfig.contact.phone }}</NuxtLink
                     ><br />
                     <NuxtLink
-                        :class="{ '--onDark z-10': onDark }"
+                        :class="{ '--onDark': onDark }"
                         class="inlineLink"
                         :to="'mailto:' + appConfig.contact.email"
                         >{{ appConfig.contact.email }}</NuxtLink

@@ -84,5 +84,10 @@
             }
         ]
     },
+    "blog": {
+        "eyebrow": "Blog",
+        "heading": "The latest articles and news",
+        "subheading": "Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles."
+    },
     "license": "Aquesta obra té la llicència"
 }

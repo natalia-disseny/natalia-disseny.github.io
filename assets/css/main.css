@@ -20,10 +20,10 @@
         @apply relative cursor-pointer rounded-full border-2 border-black px-4 py-2.5 font-medium transition-all before:contents;
     }
     .btn-primary:before {
-        @apply bg-lemon-300 absolute left-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-x-1/2 -translate-y-1/2 rounded-full transition-all ease-in-out;
+        @apply absolute left-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-x-1/2 -translate-y-1/2 rounded-full bg-lemon-300 transition-all ease-in-out;
     }
     .btn-primary:hover:before {
-        @apply bg-lemon-400 left-[44%] top-[64%] w-[104%];
+        @apply left-[44%] top-[64%] w-[104%] bg-lemon-400;
     }
     .btn-primary:focus:before {
         @apply bg-lemon-500;
@@ -34,10 +34,10 @@
     }
 
     .btn-round {
-        @apply hover:bg-lemon-300 focus:bg-lemon-500 flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10;
+        @apply flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10 hover:bg-lemon-300 focus:bg-lemon-500;
     }
     .btn-round.--onDark {
-        @apply hover:bg-lemon-400 focus:bg-lemon-500 font-medium text-white hover:fill-black hover:text-black focus:text-black;
+        @apply font-medium text-white hover:bg-lemon-400 hover:fill-black hover:text-black focus:bg-lemon-500 focus:text-black;
     }
 
     .portfolioWork {
@@ -45,10 +45,10 @@
     }
 
     .inlineLink {
-        @apply hover:bg-lemon-400 relative underline before:contents hover:no-underline;
+        @apply relative z-10 underline before:contents hover:bg-lemon-400 hover:no-underline;
     }
     .inlineLink:hover:before {
-        @apply bg-lemon-400 absolute left-1/2 top-0 -z-10 block h-full -translate-x-1/2;
+        @apply absolute left-1/2 top-0 -z-10 block h-full -translate-x-1/2 bg-lemon-400;
         width: calc(100% + 8px);
     }
     .inlineLink.--onDark {

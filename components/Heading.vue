@@ -22,7 +22,7 @@ defineProps<{
             <p
                 class="font-display"
                 :class="[
-                    onDark ? 'text-teal-100' : 'font-semibold text-teal-700',
+                    onDark ? 'text-white' : 'font-semibold text-teal-900',
                 ]">
                 {{ subheading }}
             </p>

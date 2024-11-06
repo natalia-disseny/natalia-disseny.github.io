@@ -19,7 +19,7 @@ const localePath = useLocalePath()
                     </NuxtLink>
 
                     <div class="mt-10 w-1/2 border-t border-white/10 pt-10">
-                        <ContactInfo />
+                        <ContactInfo onDark />
                     </div>
                 </div>
             </div>
