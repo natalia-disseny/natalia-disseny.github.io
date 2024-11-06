@@ -6,9 +6,6 @@ defineProps({
 })
 
 const menuIsVisible = inject('menuIsVisible')
-
-const Nfill = '#005252'
-const Dfill = '#008080'
 const logoSize = 50
 </script>
 <template>
@@ -24,15 +21,21 @@ const logoSize = 50
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
-                :class="[onDark ? 'fill-coral-400' : 'fill-coral-900']"
+                class="fill-coral-500"
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M0 372H248L0 124V372Z" />
+                d="M0 352H208L0 144V352Z" />
             <path
-                :class="[onDark ? 'fill-teal-400' : 'fill-teal-900']"
+                class="fill-teal-900"
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M248 496C384.967 496 496 384.967 496 248C496 111.033 384.967 0 248 0V496Z" />
+            <path class="fill-lemon-500" d="M0 392H208V496H0V392Z" />
+            <path
+                class="fill-lemon-500"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M208 0L0 0V92.7157L208 300.716V0Z" />
         </svg>
 
         <span
