@@ -5,14 +5,12 @@
         "intro": {
             "eyebrow": "Una mica sobre mi",
             "heading": "L'adaptabilitat és la meva <br/>fortalesa",
-            "subheading": "El meu objectiu és crear webs visualment agradables i adaptables que ajudin les petites empreses a trobar el seu lloc únic en el mercat.",
             "description": "<p>Hola, sóc la Natàlia, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive. </p><p>La meva missió és empoderar aquestes empreses reduint la bretxa tecnològica i ajudant-les a connectar amb un públic més jove i tecnològicament avançat. Tant si estàs en el sector del comerç, l'hostaleria o qualsevol altra indústria, sóc aquí per donar vida a la teva visió única.</p>",
             "stats": ["Anys d'experiència", "Projectes realitzats amb èxit"]
         },
         "goals": {
             "eyebrow": "Els meus objectius",
             "heading": "Petits passos porten a grans resultats",
-            "subheading": "Amb aquests objectius en ment, m'esforço per crear webs que no només es vegin impressionants, sinó que també marquin una diferència.",
             "stats": [
                 {
                     "title": "Potenciar les empreses locals",
@@ -35,7 +33,6 @@
         "services": {
             "eyebrow": "Serveis que ofereixo",
             "heading": "Disseny web excepcional, UX/UI i més",
-            "subheading": "Tant si estàs creant un nou lloc web com millorant les experiències d'usuari, ofereixo suport expert per donar vida a la teva visió en tots els dispositius.",
             "stats": [
                 {
                     "description": "<strong>Disseny web responsive i UX/UI</strong></br/> Creant llocs web atractius i fàcils d'usar amb experiències d'usuari intuïtives que es veuen perfectes en qualsevol dispositiu."
@@ -57,7 +54,6 @@
 
         "eyebrow": "Escriu-me",
         "heading": "I treballem juntes!",
-        "subheading": "Estic desitjant conèixer-te",
 
         "addressTitle": "La meva oficina",
         "cta": "Digues hola!",
@@ -74,7 +70,6 @@
     "portfolio": {
         "eyebrow": "Portfolio",
         "heading": "Solucions funcionals per a problemes reals",
-        "subheading": "Crec en l'eficiència i en maximitzar els recursos per oferir el millor valor als meus clients.",
 
         "works": [
             {
@@ -86,8 +81,7 @@
     },
     "blog": {
         "eyebrow": "Blog",
-        "heading": "The latest articles and news",
-        "subheading": "Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles."
+        "heading": "The latest articles and news"
     },
     "license": "Aquesta obra té la llicència"
 }

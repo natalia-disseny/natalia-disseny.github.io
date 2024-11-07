@@ -6,7 +6,7 @@ const currentDate = new Date()
 <template>
     <footer class="mx-auto w-full max-w-7xl bg-white px-6 lg:px-8">
         <div
-            class="border-neutral-950/10 mb-20 flex flex-col flex-wrap items-center gap-x-6 gap-y-4 border-t pt-12 md:flex-row md:justify-between">
+            class="mb-20 flex flex-col flex-wrap items-center gap-x-6 gap-y-4 border-t border-black/10 pt-12 md:flex-row md:justify-between">
             <Logo />
             <div class="text-xs">
                 © {{ currentDate.getFullYear() }} - {{ $t('license') }}

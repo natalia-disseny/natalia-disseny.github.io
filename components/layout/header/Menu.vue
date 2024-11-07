@@ -40,12 +40,14 @@ const menuIsVisible = inject('menuIsVisible')
                         type="button"
                         aria-expanded="false"
                         :class="
-                            onDark ? 'hover:bg-gray-800' : 'hover:bg-gray-50'
+                            onDark
+                                ? 'hover:bg-primary-800'
+                                : 'hover:bg-primary-50'
                         "
-                        class="group rounded-full p-1.5 leading-[10px] transition hover:bg-gray-50"
+                        class="hover:bg-primary-50 group rounded-full p-1.5 leading-[10px] transition"
                         aria-label="Toggle navigation">
                         <span
-                            :class="onDark ? 'text-white' : 'text-gray-900'"
+                            :class="onDark ? 'text-white' : 'text-black'"
                             class="material-symbols-rounded bg-transparent text-[30px]">
                             {{ menuIsVisible ? 'close' : 'menu' }}
                         </span>

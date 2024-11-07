@@ -2,8 +2,7 @@
     <BoxedDiv>
         <Heading
             :eyebrow="$t('about.services.eyebrow')"
-            :heading="$t('about.services.heading')"
-            :subheading="$t('about.services.subheading')" />
+            :heading="$t('about.services.heading')" />
 
         <Stats
             :cols="2"

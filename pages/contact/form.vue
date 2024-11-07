@@ -35,7 +35,7 @@ const sendEmail = () => {
 <template>
     <div class="lg:order-last">
         <form @submit.prevent="sendEmail()">
-            <div class="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
+            <div class="isolate mt-6 -space-y-px rounded-2xl">
                 <FormInput
                     autocomplete="name"
                     :name="$t('contact.form.name')"

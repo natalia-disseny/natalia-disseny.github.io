@@ -17,7 +17,7 @@ watch(menuIsVisible, async (newVisibility) => {
 
 <template>
     <div>
-        <Html class="h-full bg-gray-900 text-base antialiased" :lang="locale" />
+        <Html class="h-full bg-black text-base antialiased" :lang="locale" />
         <Title>{{ useAppConfig().contact.company }}</Title>
 
         <Body class="flex min-h-full flex-col">

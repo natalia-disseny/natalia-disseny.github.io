@@ -5,14 +5,12 @@
         "intro": {
             "eyebrow": "Un poco sobre mí",
             "heading": "La adaptabilidad es mi fortaleza",
-            "subheading": "Mi objetivo es crear webs visualmente agradables y adaptables que ayuden a las pequeñas empresas a encontrar su lugar único en el mercado",
             "description": "<p>Hola, soy Natàlia, la mente creativa tras Natàlia Disseny. Me apasiona ayudar a las pequeñas empresas locales a destacar en el mundo digital con páginas web impresionantes, funcionales y responsive.</p><p>Mi misión es empoderar estas empresas reduciendo la brecha tecnológica y ayudándolas a conectar con un público más joven y tecnológicamente avanzado. Tanto si estás en el sector del comercio, la hostalería o qualquier otra indústria, estoy aquí para dar vida a tu visión única.</p>",
             "stats": ["Años de experiencia", "Proyectos realizados con éxito"]
         },
         "goals": {
             "eyebrow": "Mis objetivos",
             "heading": "Pequeños pasos llevan a grandes resultados",
-            "subheading": "Con estos objetivos en mente, me esfuerzo por crear webs que no solo se vean impresionantes, sino que también marquen la diferencia.",
             "stats": [
                 {
                     "title": "Potenciar las empresas locales",
@@ -35,7 +33,6 @@
         "services": {
             "eyebrow": "Servicios que ofrezco",
             "heading": "Diseño web excepcional, UX/UI y más",
-            "subheading": "Tanto si estás creando un nuevo sitio web como mejorando las experiencias de usuario, ofrezco soporte experto para dar vida a tu visión en todos los dispositivos.",
             "stats": [
                 {
                     "description": "<strong>Diseño web responsive y UX/UI</strong></br/> Creando sitios web atractivos y fáciles de usar con experiencias de usuario intuitivas que se ven perfectas en cualquier dispositivo."
@@ -57,7 +54,6 @@
 
         "eyebrow": "Escríbeme",
         "heading": "Y trabajemos juntas!",
-        "subheading": "Estoy deseando conocerte",
 
         "addressTitle": "Mi \"oficina\"",
         "cta": "Dime hola!",
@@ -74,7 +70,6 @@
     "portfolio": {
         "eyebrow": "Portfolio",
         "heading": "Soluciones funcionales para problemas reales",
-        "subheading": "Creo en la eficiencia y en maximizar los recursos para ofrecer el mejor valor a mis clientes.",
 
         "works": [
             {

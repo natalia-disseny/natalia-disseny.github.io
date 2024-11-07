@@ -55,7 +55,7 @@ const menu = [
                                         :to="localePath(item.route)"
                                         >{{ $t(item.button)
                                         }}<span
-                                            class="absolute inset-y-0 -z-10 w-screen bg-lemon-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100"></span
+                                            class="bg-accent-900 absolute inset-y-0 -z-10 w-screen opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100"></span
                                     ></NuxtLink>
                                 </div>
                             </div>

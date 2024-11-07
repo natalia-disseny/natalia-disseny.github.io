@@ -6,14 +6,12 @@
         "intro": {
             "eyebrow": "A little about me",
             "heading": "My strength is adaptability",
-            "subheading": "I focus on creating beautiful, responsive websites that not only look great but also help small and local businesses find their unique place in the market",
             "description": "<p>Hello, I'm Natàlia, the creative mind behind Natàlia Disseny. I’m passionate about helping small local businesses stand out in the digital world with stunning, functional, and responsive websites.</p><p>My mission is to empower these businesses by reducing the technology gap and helping them connect with a younger, more tech-savvy audience. Whether you're in retail, hospitality, or any other industry, I'm here to bring your unique vision to life.</p>",
             "stats": ["Years of experience", "Projects successfully completed"]
         },
         "goals": {
             "eyebrow": "My values",
             "heading": "Small steps lead to great results",
-            "subheading": "With these goals in mind, I strive to create websites that not only look impressive but also make a difference.",
             "stats": [
                 {
                     "title": "Empowering local businesses",
@@ -40,7 +38,6 @@
         "services": {
             "eyebrow": "Services I offer",
             "heading": "Expert Web Design, UX/UI<br/> and More",
-            "subheading": "Whether you're building a new website or enhancing user experiences, I provide expert support to bring your vision to life across all devices.",
             "stats": [
                 {
                     "description": "<strong>Responsive and UX/UI Design Web Design</strong></br/> Creating beautiful, user-friendly websites with intuitive user experiences that look great on any device."
@@ -62,7 +59,6 @@
 
         "eyebrow": "Talk to me",
         "heading": "And let's work together!",
-        "subheading": "I can’t wait to know you",
 
         "addressTitle": "My \"office\"",
         "cta": "Say hi!",
@@ -79,7 +75,6 @@
     "portfolio": {
         "eyebrow": "My work",
         "heading": "Proven solutions for real-world problems",
-        "subheading": "I believe in efficiency and maximizing resources to deliver the best value to my clients.",
 
         "works": [
             {

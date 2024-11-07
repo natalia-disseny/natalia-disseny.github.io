@@ -1,12 +1,11 @@
 <template>
     <div
-        class="my-24 rounded-[40px] bg-gray-900 py-16 sm:mt-32 sm:py-24 lg:mt-40 lg:py-32">
+        class="my-24 rounded-[40px] bg-black py-16 sm:mt-32 sm:py-24 lg:mt-40 lg:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <Heading
                 :on-dark="true"
                 :eyebrow="$t('about.goals.eyebrow')"
-                :heading="$t('about.goals.heading')"
-                :subheading="$t('about.goals.subheading')" />
+                :heading="$t('about.goals.heading')" />
 
             <Stats
                 :cols="2"

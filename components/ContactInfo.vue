@@ -14,7 +14,7 @@ const appConfig = useAppConfig()
         <ul role="list" class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
             <li>
                 <address class="text-sm not-italic">
-                    <strong class="text-gray-950">Sant Celoni</strong><br />
+                    <strong class="text-black">Sant Celoni</strong><br />
                     Carrer Joan Maragall
                     <br />
                     08470 Barcelona

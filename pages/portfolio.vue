@@ -15,8 +15,7 @@ const works = [
     <BoxedDiv>
         <Heading
             :eyebrow="$t('portfolio.eyebrow')"
-            :heading="$t('portfolio.heading')"
-            :subheading="$t('portfolio.subheading')" />
+            :heading="$t('portfolio.heading')" />
     </BoxedDiv>
 
     <div class="grid gap-y-36">
@@ -45,11 +44,11 @@ const works = [
 
                         <div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                             <p
-                                class="after:text-neutral-300 text-sm tracking-tight text-black after:ml-4 after:font-semibold after:content-['/'] lg:mt-2 lg:after:hidden"
+                                class="after:text-primary-300 text-sm tracking-tight text-black after:ml-4 after:font-semibold after:content-['/'] lg:mt-2 lg:after:hidden"
                                 v-html="
                                     $t(`portfolio.works[${index}].occupation`)
                                 " />
-                            <p class="text-sm text-teal-900 lg:mt-2">
+                            <p class="text-secondary-900 text-sm lg:mt-2">
                                 <time :datetime="project.date">{{
                                     project.date
                                 }}</time>
@@ -74,7 +73,7 @@ const works = [
                 </div>
             </BoxedDiv>
 
-            <div class="col-span-full bg-gray-50">
+            <div class="bg-primary-50 col-span-full">
                 <div class="-my-px mx-auto max-w-[76rem]">
                     <div class="group relative">
                         <img

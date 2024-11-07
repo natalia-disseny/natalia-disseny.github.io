@@ -10,8 +10,7 @@ import ContactForm from './contact/form.vue'
     <BoxedDiv>
         <Heading
             :eyebrow="$t('contact.eyebrow')"
-            :heading="$t('contact.heading')"
-            :subheading="$t('contact.subheading')" />
+            :heading="$t('contact.heading')" />
 
         <div class="mt-32 grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
             <ContactForm />
@@ -19,7 +18,7 @@ import ContactForm from './contact/form.vue'
                 <ContactInfo />
 
                 <div
-                    class="before:bg-gray-950 after:bg-gray-950/10 relative mt-16 pt-16 before:absolute before:left-0 before:top-0 before:h-px before:w-6 after:absolute after:left-8 after:right-0 after:top-0 after:h-px">
+                    class="before:bg-secondary-900 after:bg-secondary-100 relative mt-16 pt-16 before:absolute before:left-0 before:top-0 before:h-1 before:w-6 after:absolute after:left-8 after:right-0 after:top-0 after:h-1">
                     <Social />
                 </div>
             </div>

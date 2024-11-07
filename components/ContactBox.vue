@@ -5,7 +5,7 @@ const localePath = useLocalePath()
 <template>
     <BoxedDiv>
         <div
-            class="mt-24 rounded-[40px] bg-gray-900 py-16 text-white sm:mt-32 sm:py-24 lg:mt-40 lg:py-32">
+            class="mt-24 rounded-[40px] bg-black py-16 text-white sm:mt-32 sm:py-24 lg:mt-40 lg:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-4xl">
                     <h2 class="mb-10 text-4xl">

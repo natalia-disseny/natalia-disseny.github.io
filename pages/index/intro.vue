@@ -8,19 +8,18 @@ const appConfig = useAppConfig()
             <div class="col-span-3 sm:col-span-2">
                 <Heading
                     :eyebrow="$t('about.intro.eyebrow')"
-                    :heading="$t('about.intro.heading')"
-                    :subheading="$t('about.intro.subheading')" />
+                    :heading="$t('about.intro.heading')" />
                 <div
                     class="max-w-2xl space-y-6"
                     v-html="$t('about.intro.description')" />
             </div>
 
             <div
-                class="group relative col-span-3 overflow-hidden rounded-3xl bg-gray-100 sm:col-span-1">
+                class="bg-secondary-900 group relative col-span-3 overflow-hidden rounded-3xl sm:col-span-1">
                 <img
                     alt=""
                     loading="lazy"
-                    class="w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                    class="w-full object-cover opacity-90 grayscale transition duration-500 motion-safe:group-hover:scale-105"
                     src="/public/profilePicture.jpg" />
                 <div
                     class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">

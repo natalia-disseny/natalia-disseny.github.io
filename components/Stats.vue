@@ -22,14 +22,14 @@ defineProps<{
                 class="relative flex gap-x-8 overflow-hidden pl-8 tracking-wide before:absolute before:left-0 before:top-0 before:h-8 before:w-1 after:absolute after:bottom-0 after:left-0 after:top-10 after:w-1"
                 :class="[
                     onDark
-                        ? 'before:bg-coral-500 after:bg-coral-100'
-                        : 'before:bg-coral-900 after:bg-coral-100',
+                        ? 'before:bg-secondary-500 after:bg-secondary-100'
+                        : 'before:bg-secondary-900 after:bg-secondary-100',
                     stat.icon ? 'flex-row' : 'flex-col',
                 ]">
                 <dd
                     v-if="stat.value || stat.icon"
                     :class="[
-                        onDark ? 'text-white' : 'text-gray-900',
+                        onDark ? 'text-white' : 'text-black',
                         {
                             'hidden self-center lg:block': stat.icon,
                         },
@@ -48,7 +48,7 @@ defineProps<{
                     </span>
                 </dd>
                 <dt
-                    :class="[onDark ? 'text-white' : 'text-gray-800']"
+                    :class="[onDark ? 'text-white' : 'text-primary-800']"
                     class="py-2 text-lg"
                     v-html="stat.name" />
             </div>

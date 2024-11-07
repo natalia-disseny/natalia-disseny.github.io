@@ -6,10 +6,7 @@
     }}</Title>
 
     <BoxedDiv>
-        <Heading
-            :eyebrow="$t('blog.eyebrow')"
-            :heading="$t('blog.heading')"
-            :subheading="$t('blog.subheading')" />
+        <Heading :eyebrow="$t('blog.eyebrow')" :heading="$t('blog.heading')" />
     </BoxedDiv>
 
     <ContactBox />

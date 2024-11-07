@@ -6,7 +6,7 @@ defineProps({
 
 <template>
     <div :class="{ 'fill-white text-white': onDark }">
-        <h2 class="text-gray-950 font-display text-base font-semibold">
+        <h2 class="font-display text-base font-semibold text-black">
             {{ $t('contact.follow') }}
         </h2>
         <div class="-ml-2.5 mt-4 flex gap-x-6">
