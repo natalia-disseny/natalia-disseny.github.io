@@ -73,7 +73,7 @@ const works = [
                 </div>
             </BoxedDiv>
 
-            <div class="bg-primary-50 col-span-full">
+            <div class="bg-primary-200 col-span-full">
                 <div class="-my-px mx-auto max-w-[76rem]">
                     <div class="group relative">
                         <img

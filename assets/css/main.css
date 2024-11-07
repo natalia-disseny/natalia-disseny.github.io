@@ -33,10 +33,10 @@
     }
 
     .btn-round {
-        @apply hover:bg-accent-900 focus:bg-accent-700 flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10;
+        @apply hover:bg-primary-700 hover:text-accent-900 hover:fill-accent-900 focus:bg-primary-900 flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10;
     }
     .btn-round.--onDark {
-        @apply font-medium text-white hover:fill-black hover:text-black focus:text-black;
+        @apply focus:bg-primary-800 hover:text-accent-900 hover:fill-accent-900 text-white;
     }
 
     .inlineLink {

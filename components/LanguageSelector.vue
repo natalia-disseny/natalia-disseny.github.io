@@ -13,8 +13,7 @@ const availableLocales = computed(() => {
         <div
             class="mx-auto mt-4 flex max-w-2xl justify-end gap-x-6 lg:max-w-none">
             <NuxtLink
-                :class="{ '--onDark': onDark }"
-                class="btn-round"
+                :class="['btn-round font-medium', { '--onDark': onDark }]"
                 v-for="locale in availableLocales"
                 :key="locale.code"
                 :to="switchLocalePath(locale.code)">
