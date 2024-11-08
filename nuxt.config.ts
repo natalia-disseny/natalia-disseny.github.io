@@ -41,52 +41,49 @@ export default defineNuxtConfig({
         },
     },
 
-    modules: [
-        [
-            '@nuxtjs/i18n',
-            {
-                defaultLocale: 'ca',
-                strategy: 'prefix_except_default',
-                detectBrowserLanguage: false,
-                langDir: 'locales',
-                compilation: {
-                    strictMessage: false,
-                },
-                locales: [
-                    {
-                        name: 'En',
-                        code: 'en',
-                        file: 'en-US.json',
-                    },
-                    {
-                        name: 'Ca',
-                        code: 'ca',
-                        file: 'ca-ES.json',
-                    },
-                    {
-                        name: 'Es',
-                        code: 'es',
-                        file: 'es-ES.json',
-                    },
-                ],
+    modules: [[
+        '@nuxtjs/i18n',
+        {
+            defaultLocale: 'ca',
+            strategy: 'prefix_except_default',
+            detectBrowserLanguage: false,
+            langDir: 'locales',
+            compilation: {
+                strictMessage: false,
             },
-        ],
-        [
-            'nuxt-mail',
-            {
-                message: {
-                    to: 'nataliasmdev@gmail.com',
+            locales: [
+                {
+                    name: 'En',
+                    code: 'en',
+                    file: 'en-US.json',
                 },
-                smtp: {
-                    service: 'gmail',
-                    auth: {
-                        user: 'nataliasmdev@gmail.com',
-                        pass: 'ihvr hoiq yakc kpvv',
-                    },
+                {
+                    name: 'Ca',
+                    code: 'ca',
+                    file: 'ca-ES.json',
+                },
+                {
+                    name: 'Es',
+                    code: 'es',
+                    file: 'es-ES.json',
+                },
+            ],
+        },
+    ], [
+        'nuxt-mail',
+        {
+            message: {
+                to: 'nataliasmdev@gmail.com',
+            },
+            smtp: {
+                service: 'gmail',
+                auth: {
+                    user: 'nataliasmdev@gmail.com',
+                    pass: 'ihvr hoiq yakc kpvv',
                 },
             },
-        ],
-    ],
+        },
+    ]],
 
     nitro: {
         prerender: {
