@@ -21,7 +21,9 @@ const works = [
     <div class="grid gap-y-36">
         <div v-for="(project, index) in works">
             <BoxedDiv>
-                <div class="portfolioWork">
+                <div class="divider" />
+
+                <div class="grid grid-cols-3 gap-x-8 gap-y-8 py-16">
                     <div
                         class="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                         <div

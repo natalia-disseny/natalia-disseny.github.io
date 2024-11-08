@@ -17,8 +17,7 @@ import ContactForm from './contact/form.vue'
             <div>
                 <ContactInfo />
 
-                <div
-                    class="before:bg-secondary-900 after:bg-secondary-100 relative mt-16 pt-16 before:absolute before:left-0 before:top-0 before:h-1 before:w-6 after:absolute after:left-8 after:right-0 after:top-0 after:h-1">
+                <div class="divider mt-16 pt-16">
                     <Social />
                 </div>
             </div>

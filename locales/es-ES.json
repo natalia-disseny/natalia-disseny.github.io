@@ -79,6 +79,10 @@
             }
         ]
     },
+    "blog": {
+        "eyebrow": "Blog",
+        "heading": "The latest articles and news"
+    },
 
     "license": "Esta obra tiene la licencia"
 }
