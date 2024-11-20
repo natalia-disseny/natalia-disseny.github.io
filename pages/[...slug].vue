@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NotFound from '~/components/NotFound.vue'
+defineI18nRoute(false)
 </script>
 
 <template>

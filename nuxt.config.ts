@@ -47,7 +47,6 @@ export default defineNuxtConfig({
             defaultLocale: 'ca',
             strategy: 'prefix_except_default',
             detectBrowserLanguage: false,
-            langDir: 'locales',
             compilation: {
                 strictMessage: false,
             },
@@ -83,7 +82,7 @@ export default defineNuxtConfig({
                 },
             },
         },
-    ]],
+    ], '@nuxt/content'],
 
     nitro: {
         prerender: {

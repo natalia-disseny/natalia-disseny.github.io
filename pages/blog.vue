@@ -1,6 +1,9 @@
-<script setup lang="ts">
-const localePath = useLocalePath()
-const articles = []
+<script setup>
+const articles = await queryContent('blog').find()
+
+// .where({
+//     title: 'Per què un lloc web modern i adaptable és essencial per a petites empreses',
+// })
 </script>
 
 <template>
@@ -30,16 +33,13 @@ const articles = []
                         </h2>
                         <NuxtLink
                             v-if="post._path"
-                            :to="localePath(post._path)"
+                            :to="post._path"
                             class="btn-round min-w-10">
                             <span class="material-symbols-rounded">
                                 read_more
                             </span>
                         </NuxtLink>
                     </div>
-                    <p v-if="post.excerpt" class="my-4 text-base">
-                        {{ post.excerpt.children[0].children[0].value }}...
-                    </p>
                 </div>
             </div>
         </div>

@@ -12,13 +12,22 @@ const availableLocales = computed(() => {
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div
             class="mx-auto mt-4 flex max-w-2xl justify-end gap-x-6 lg:max-w-none">
-            <NuxtLink
-                :class="['btn-round font-medium', { '--onDark': onDark }]"
+            <SwitchLocalePathLink
                 v-for="locale in availableLocales"
                 :key="locale.code"
-                :to="switchLocalePath(locale.code)">
-                {{ locale.name }}
-            </NuxtLink>
+                :class="[
+                    'languageSelector btn-round font-medium disabled:opacity-0',
+                    { '--onDark': onDark },
+                ]"
+                :locale="locale.code"
+                >{{ locale.name }}</SwitchLocalePathLink
+            >
         </div>
     </div>
 </template>
+
+<style>
+.languageSelector:not([href]) {
+    @apply invisible;
+}
+</style>
