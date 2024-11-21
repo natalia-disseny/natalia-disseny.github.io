@@ -2,7 +2,6 @@
 type: article
 title: 'Com el disseny web pot ajudar els negocis locals a competir amb les grans marques'
 date: '2024-11-27'
-image: 'com-el-disseny-web-pot-ajudar-els-negocis-locals-a-competir-amb-les-grans-marques.jpg'
 imageTitle: 'Photo by Ketut Subiyanto: https://www.pexels.com/photo/focused-young-diverse-female-colleagues-browsing-smartphone-and-talking-to-each-other-4350115/'
 ---
 

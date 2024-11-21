@@ -18,7 +18,7 @@ const articles = await queryContent('blog').sort({ date: -1 }).limit(3).find()
                             <img
                                 loading="lazy"
                                 class="w-full object-cover opacity-90 transition duration-500 motion-safe:group-hover:scale-105"
-                                :src="'/blog/' + articles[0].image"
+                                :src="articles[0]._path + '.jpg'"
                                 :alt="articles[0].imageTitle"
                                 :title="articles[0].title" />
                         </div>

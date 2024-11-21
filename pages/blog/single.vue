@@ -15,7 +15,7 @@ defineProps({
                     <img
                         loading="lazy"
                         class="h-[200px] w-full object-cover opacity-90 transition duration-500 motion-safe:group-hover:scale-105"
-                        :src="'/blog/' + post.image"
+                        :src="post._path + '.jpg'"
                         :alt="post.imageTitle"
                         :title="post.title" />
                 </div>

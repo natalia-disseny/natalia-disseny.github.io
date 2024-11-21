@@ -61,7 +61,9 @@ defineProps({
                 class="mt-10 flex max-h-40 overflow-hidden rounded-3xl bg-coral-900 sm:max-h-80 sm:rounded-[40px]">
                 <img
                     class="self-center opacity-90 transition-opacity"
-                    :src="`/blog/${post.image}`" />
+                    :alt="post.imageTitle"
+                    :title="post.imageTitle"
+                    :src="`/blog/${$route.params.slug[1]}.jpg`" />
             </div>
         </div>
 
