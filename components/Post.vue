@@ -1,10 +1,52 @@
-<script setup lang="ts">
+<script setup>
 defineProps({
     post: Object,
 })
 </script>
 
 <template>
+    <nav class="mb-20 flex" aria-label="Breadcrumb">
+        <ol role="list" class="flex items-center space-x-2 text-sm">
+            <li>
+                <div>
+                    <NuxtLink to="/blog" class="inlineLink"> Blog </NuxtLink>
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg
+                        class="size-5 shrink-0 text-primary-300"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true">
+                        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <span
+                        class="ml-2 font-medium text-primary-500 hover:text-primary-700"
+                        >{{
+                            post.type == 'article' ? 'Articles' : 'Notícies'
+                        }}</span
+                    >
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg
+                        class="size-5 shrink-0 text-primary-300"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true">
+                        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <span
+                        class="ml-2 font-medium text-primary-500 hover:text-primary-700"
+                        >{{ post.title }}</span
+                    >
+                </div>
+            </li>
+        </ol>
+    </nav>
+
     <article class="relative before:block">
         <div class="mb-20 text-center">
             <h1>
