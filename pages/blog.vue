@@ -17,12 +17,14 @@ const articles = await queryContent('blog').sort({ date: -1 }).find()
             <div v-for="post in articles" class="group">
                 <div
                     class="relative overflow-hidden rounded-3xl bg-primary-600">
-                    <img
-                        loading="lazy"
-                        class="h-[200px] w-full object-cover opacity-90 transition duration-500 group-hover:opacity-80 motion-safe:group-hover:scale-105"
-                        :src="'/blog/' + post.image"
-                        :alt="post.imageTitle"
-                        :title="post.title" />
+                    <NuxtLink v-if="post._path" :to="post._path">
+                        <img
+                            loading="lazy"
+                            class="h-[200px] w-full object-cover opacity-90 transition duration-500 group-hover:opacity-80 motion-safe:group-hover:scale-105"
+                            :src="'/blog/' + post.image"
+                            :alt="post.imageTitle"
+                            :title="post.title" />
+                    </NuxtLink>
                 </div>
                 <div class="">
                     <p class="my-2 font-body text-base text-secondary-900">

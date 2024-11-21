@@ -19,7 +19,7 @@ defineProps({
                 class="mt-10 flex h-[300px] overflow-hidden rounded-[40px] bg-secondary-900">
                 <img
                     class="self-center opacity-90 transition-opacity hover:opacity-100"
-                    :src="`/blog/${$route.params.slug[1]}.jpg`" />
+                    :src="`/blog/${post.image}`" />
             </div>
         </div>
 
