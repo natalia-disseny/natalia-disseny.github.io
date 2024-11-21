@@ -77,6 +77,8 @@ defineProps({
             </ContentRenderer>
         </div>
     </article>
+
+    <ContactBox />
 </template>
 
 <style>
