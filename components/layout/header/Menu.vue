@@ -17,15 +17,6 @@ const menuIsVisible = inject('menuIsVisible')
             <div class="mt-6 flex items-center justify-between sm:mt-0">
                 <Logo :on-dark="onDark" />
 
-                <PrimaryButton
-                    @click="menuIsVisible = false"
-                    :to="localePath('/contact')"
-                    title="Contact"
-                    class="sm:hidden"
-                    :onDark>
-                    {{ $t('contact.cta') }}
-                </PrimaryButton>
-
                 <div class="flex items-center gap-x-8">
                     <PrimaryButton
                         @click="menuIsVisible = false"

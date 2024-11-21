@@ -45,7 +45,7 @@ const logoSize = 50
         </svg>
 
         <span
-            class="hidden text-2xl sm:block"
+            class="text-2xl"
             :class="[onDark ? 'text-white' : 'text-black']"
             >{{ useAppConfig().contact.company }}</span
         >
