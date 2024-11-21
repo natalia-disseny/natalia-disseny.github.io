@@ -3,7 +3,7 @@ type: notícia
 title: 'Vulnerabilitat crítica en un plugin de WordPress exposa més de 4 milions de llocs web'
 date: '2024-11-20'
 image: 'vulnerabilitat-critica-en-un-plugin-de-word-press-exposa-mes-de-4-milions-de-llocs-web.jpg'
-imageTitle: 'Foto by Pachon in Motion: https://www.pexels.com/es-es/foto/ligero-ciudad-rojo-luces-18545010/'
+imageTitle: 'Photo by Markus Spiske: https://www.pexels.com/photo/creative-internet-typing-abstract-6212801/'
 ---
 
 ## Introducció

@@ -11,7 +11,7 @@
         font-weight: 600;
     }
     p {
-        @apply text-primary-800 text-lg leading-7;
+        @apply text-lg leading-7 text-primary-800;
     }
 }
 
@@ -20,7 +20,7 @@
         @apply relative cursor-pointer rounded-full border-2 border-black px-4 py-2.5 font-medium transition-all before:contents;
     }
     .btn-primary:before {
-        @apply bg-accent-900 absolute right-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-y-1/2 translate-x-1/2 rounded-full transition-all ease-in-out;
+        @apply absolute right-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-y-1/2 translate-x-1/2 rounded-full bg-accent-900 transition-all ease-in-out;
     }
     .btn-primary:hover:before {
         @apply mr-2 mt-2;
@@ -33,17 +33,17 @@
     }
 
     .btn-round {
-        @apply hover:bg-primary-700 hover:text-accent-900 hover:fill-accent-900 focus:bg-primary-900 flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10;
+        @apply flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10 hover:bg-primary-700 hover:fill-accent-900 hover:text-accent-900 focus:bg-primary-900;
     }
     .btn-round.--onDark {
-        @apply focus:bg-primary-800 hover:text-accent-900 hover:fill-accent-900 text-white;
+        @apply text-white hover:fill-accent-900 hover:text-accent-900 focus:bg-primary-800;
     }
 
     .inlineLink {
-        @apply hover:bg-accent-900 relative z-10 underline before:contents hover:no-underline;
+        @apply relative z-10 underline before:contents hover:bg-accent-900 hover:no-underline;
     }
     .inlineLink:hover:before {
-        @apply bg-accent-900 absolute left-1/2 top-0 -z-10 block h-full -translate-x-1/2;
+        @apply absolute left-1/2 top-0 -z-10 block h-full -translate-x-1/2 bg-accent-900;
         width: calc(100% + 8px);
     }
     .inlineLink.--onDark {
@@ -51,6 +51,6 @@
     }
 
     .divider {
-        @apply before:bg-secondary-900 after:bg-secondary-100 relative before:absolute before:left-0 before:top-0 before:h-1 before:w-6 after:absolute after:left-8 after:right-0 after:top-0 after:h-1;
+        @apply relative before:absolute before:left-0 before:top-0 before:h-1 before:w-6 before:bg-secondary-900 after:absolute after:left-8 after:right-0 after:top-0 after:h-1 after:bg-secondary-100;
     }
 }

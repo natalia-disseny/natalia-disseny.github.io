@@ -29,7 +29,7 @@ defineProps({
                     >
                 </div>
             </li>
-            <li>
+            <li class="hidden sm:block">
                 <div class="flex items-center">
                     <svg
                         class="size-5 shrink-0 text-primary-300"
@@ -58,7 +58,7 @@ defineProps({
                     v-html="post.title" />
             </h1>
             <div
-                class="mt-10 flex h-[300px] overflow-hidden rounded-[40px] bg-coral-900">
+                class="mt-10 flex max-h-40 overflow-hidden rounded-3xl bg-coral-900 sm:max-h-80 sm:rounded-[40px]">
                 <img
                     class="self-center opacity-90 transition-opacity"
                     :src="`/blog/${post.image}`" />
