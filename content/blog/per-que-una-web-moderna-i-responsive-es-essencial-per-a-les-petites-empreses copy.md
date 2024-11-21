@@ -1,4 +1,5 @@
 ---
+type: blog
 title: 'Per què una web moderna i responsive és essencial per a les petites empreses'
 date: '2024-11-13'
 image: 'per-que-una-web-moderna-i-responsive-es-essencial-per-a-les-petites-empreses.jpg'

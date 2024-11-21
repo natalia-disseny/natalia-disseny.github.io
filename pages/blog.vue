@@ -15,15 +15,21 @@ const articles = await queryContent('blog').sort({ date: -1 }).find()
         <Heading :eyebrow="$t('blog.eyebrow')" :heading="$t('blog.heading')" />
         <div class="grid grid-cols-3 gap-x-8">
             <div v-for="post in articles" class="group">
-                <div
-                    class="relative overflow-hidden rounded-3xl bg-primary-600">
+                <div class="relative">
                     <NuxtLink v-if="post._path" :to="post._path">
-                        <img
-                            loading="lazy"
-                            class="h-[200px] w-full object-cover opacity-90 transition duration-500 group-hover:opacity-80 motion-safe:group-hover:scale-105"
-                            :src="'/blog/' + post.image"
-                            :alt="post.imageTitle"
-                            :title="post.title" />
+                        <div
+                            class="absolute -left-2 top-4 z-10 rounded-md bg-secondary-900 px-2 text-white shadow-sm">
+                            {{ post.type }}
+                        </div>
+                        <div
+                            class="overflow-hidden rounded-3xl bg-secondary-900">
+                            <img
+                                loading="lazy"
+                                class="h-[200px] w-full object-cover opacity-90 transition duration-500 group-hover:opacity-100 motion-safe:group-hover:scale-105"
+                                :src="'/blog/' + post.image"
+                                :alt="post.imageTitle"
+                                :title="post.title" />
+                        </div>
                     </NuxtLink>
                 </div>
                 <div class="">
