@@ -1,6 +1,6 @@
 ---
 title: 'Per què una web moderna i responsive és essencial per a les petites empreses'
-date: '20/11/2024'
+date: '2024-11-13'
 image: 'per-que-una-web-moderna-i-responsive-es-essencial-per-a-les-petites-empreses.jpg'
 imageTitle: 'Photo by Tranmautritam from Pexels: https://www.pexels.com/photo/full-frame-shot-of-computer-326514/'
 ---

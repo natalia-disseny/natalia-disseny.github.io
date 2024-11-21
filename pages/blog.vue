@@ -1,5 +1,5 @@
 <script setup>
-const articles = await queryContent('blog').find()
+const articles = await queryContent('blog').sort({ date: -1 }).find()
 
 // .where({
 //     title: 'Per què un lloc web modern i adaptable és essencial per a petites empreses',
@@ -15,10 +15,11 @@ const articles = await queryContent('blog').find()
         <Heading :eyebrow="$t('blog.eyebrow')" :heading="$t('blog.heading')" />
         <div class="grid grid-cols-3 gap-x-8">
             <div v-for="post in articles" class="group">
-                <div class="relative overflow-hidden bg-black">
+                <div
+                    class="relative overflow-hidden rounded-3xl bg-primary-600">
                     <img
                         loading="lazy"
-                        class="w-full object-cover opacity-90 transition duration-500 group-hover:opacity-80 motion-safe:group-hover:scale-105"
+                        class="h-[200px] w-full object-cover opacity-90 transition duration-500 group-hover:opacity-80 motion-safe:group-hover:scale-105"
                         :src="'/blog/' + post.image"
                         :alt="post.imageTitle"
                         :title="post.title" />

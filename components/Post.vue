@@ -45,6 +45,12 @@ article blockquote {
 article h2 {
     @apply font-display text-2xl font-bold;
 }
+article h6 {
+    @apply mb-4 mt-20 font-display text-base font-bold;
+}
+article ol {
+    @apply list-decimal;
+}
 article p {
     @apply my-10;
 }
