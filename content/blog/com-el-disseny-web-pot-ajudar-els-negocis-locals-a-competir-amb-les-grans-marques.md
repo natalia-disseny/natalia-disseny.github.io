@@ -43,8 +43,6 @@ Pensa que les grans marques triomfen perquè ho posen fàcil als seus clients. P
 > Un restaurant local només tenia un PDF amb el menú. Molts usuaris no podien obrir-lo o es perdien.
 > <br/>**Amb una web nova**, el menú és interactiu, fàcil de navegar i fins i tot permet fer reserves amb un clic. Resultat? Les reserves van augmentar un 40% en un mes!
 
-<div class="divider py-10"></div>
-
 ## Conclusió
 
 No cal que siguis una multinacional per tenir una presència online de 10. Amb una web **moderna**, **ben dissenyada** i **centrada en l'experiència de l'usuari**, pots competir amb les grans marques i, fins i tot, superar-les en molts aspectes. És hora de donar la millor versió de tu mateix online i demostrar que el teu negoci local té molt a dir (i a oferir). 🚀

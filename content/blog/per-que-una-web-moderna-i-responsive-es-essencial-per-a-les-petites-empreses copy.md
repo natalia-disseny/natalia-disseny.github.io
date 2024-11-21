@@ -38,8 +38,6 @@ Tenir un lloc web modern i adaptatiu et fa destacar immediatament entre la compe
 
 > **Exemple**: Una pastisseria local volia augmentar les comandes en línia de pastissos i pastes. El seu lloc web anterior no permetia una navegació ni una compra fàcils des de mòbils. Després del redisseny, el seu lloc web permet als clients veure opcions, personalitzar comandes i fins i tot programar recollides, tot des dels seus telèfons. Aquesta comoditat va atreure clients recurrents, encantats amb la facilitat de fer comandes amb uns quants tocs.
 
-<div class="divider py-10"></div>
-
 ## Conclusió
 
 Un lloc web modern i adaptatiu no és només un actiu digital; és una eina essencial per al creixement. Per a petits negocis locals, especialment aquells que volen atraure una clientela més jove i acostumada al mòbil, és el primer pas cap a un impacte significatiu. Amb un lloc web ben dissenyat i compatible amb mòbils, no només compliràs les expectatives dels clients actuals, sinó que també construiràs una marca més forta i creïble que resistirà el pas del temps.
