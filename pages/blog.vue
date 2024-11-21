@@ -1,9 +1,6 @@
 <script setup>
-const articles = await queryContent('blog').sort({ date: -1 }).find()
-
-// .where({
-//     title: 'Per què un lloc web modern i adaptable és essencial per a petites empreses',
-// })
+import LatestArticles from './blog/latest.vue'
+const articles = await queryContent('blog').sort({ date: -1 }).skip(3).find()
 </script>
 
 <template>
@@ -13,19 +10,19 @@ const articles = await queryContent('blog').sort({ date: -1 }).find()
 
     <BoxedDiv>
         <Heading :eyebrow="$t('blog.eyebrow')" :heading="$t('blog.heading')" />
+        <LatestArticles />
         <div class="grid grid-cols-3 gap-x-8">
             <div v-for="post in articles" class="group">
                 <div class="relative">
                     <NuxtLink v-if="post._path" :to="post._path">
                         <div
-                            class="absolute -left-2 top-4 z-10 rounded-md bg-secondary-900 px-2 text-white shadow-sm">
+                            class="absolute -left-2 top-4 z-10 rounded-md bg-secondary-900 px-2 py-1 text-xs uppercase tracking-wider text-white shadow-sm">
                             {{ post.type }}
                         </div>
-                        <div
-                            class="overflow-hidden rounded-3xl bg-secondary-900">
+                        <div class="overflow-hidden rounded-3xl bg-coral-900">
                             <img
                                 loading="lazy"
-                                class="h-[200px] w-full object-cover opacity-90 transition duration-500 group-hover:opacity-100 motion-safe:group-hover:scale-105"
+                                class="h-[200px] w-full object-cover opacity-90 transition duration-500 motion-safe:group-hover:scale-105"
                                 :src="'/blog/' + post.image"
                                 :alt="post.imageTitle"
                                 :title="post.title" />
@@ -36,15 +33,15 @@ const articles = await queryContent('blog').sort({ date: -1 }).find()
                     <p class="my-2 font-body text-base text-secondary-900">
                         {{ post.date }}
                     </p>
-                    <div class="flex gap-x-2">
-                        <h2 class="font-display text-lg font-bold">
-                            {{ post.title }}
-                        </h2>
+                    <h2 class="mb-4 font-display text-lg font-bold">
+                        {{ post.title }}
+                    </h2>
+                    <div class="text-right">
                         <NuxtLink
                             v-if="post._path"
                             :to="post._path"
-                            class="btn-round min-w-10">
-                            <span class="material-symbols-rounded">
+                            class="btn-primary">
+                            <span class="material-symbols-rounded align-bottom">
                                 read_more
                             </span>
                         </NuxtLink>

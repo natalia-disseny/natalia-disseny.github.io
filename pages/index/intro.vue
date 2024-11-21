@@ -15,7 +15,7 @@ const appConfig = useAppConfig()
             </div>
 
             <div
-                class="bg-secondary-900 group relative col-span-3 overflow-hidden rounded-3xl sm:col-span-1">
+                class="group relative col-span-3 overflow-hidden rounded-3xl bg-coral-900 sm:col-span-1">
                 <img
                     alt=""
                     loading="lazy"

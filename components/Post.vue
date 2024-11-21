@@ -58,9 +58,9 @@ defineProps({
                     v-html="post.title" />
             </h1>
             <div
-                class="mt-10 flex h-[300px] overflow-hidden rounded-[40px] bg-secondary-900">
+                class="mt-10 flex h-[300px] overflow-hidden rounded-[40px] bg-coral-900">
                 <img
-                    class="self-center opacity-90 transition-opacity hover:opacity-100"
+                    class="self-center opacity-90 transition-opacity"
                     :src="`/blog/${post.image}`" />
             </div>
         </div>
