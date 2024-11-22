@@ -10,6 +10,10 @@ export default defineNuxtConfig({
         },
     },
 
+    nitro: {
+        routes: { '/': { prerender: true }, '/*': { cors: true } },
+    },
+
     app: {
         head: {
             meta: [
