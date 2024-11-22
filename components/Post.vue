@@ -100,4 +100,10 @@ article ol {
 article p {
     @apply my-10;
 }
+article ul {
+    @apply -my-4 list-disc pl-8 text-lg;
+}
+article li::marker {
+    @apply text-secondary-900;
+}
 </style>
