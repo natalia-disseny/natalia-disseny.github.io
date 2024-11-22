@@ -1,4 +1,22 @@
 {
+    "home": {
+        "headline": "Potenciando tu negocio a través del diseño y sitios web funcionales",
+        "subheadline": "Haz que tu marca brille en línea con soluciones digitales personalizadas diseñadas para conectar, involucrar y crecer.",
+        "features": [
+            {
+                "name": "Desarrollo",
+                "description": "Sitios web a medida que combinan diseños únicos y una funcionalidad robusta para reflejar tu marca y cumplir con los objetivos de tu negocio."
+            },
+            {
+                "name": "Diseño",
+                "description": "Soluciones visuales para mejorar la identidad de tu marca, desde logotipos  hasta elementos de diseño cohesivos que elevan tus materiales de marketing."
+            },
+            {
+                "name": "Consultoría",
+                "description": "Orientación experta para optimizar tu presencia en línea, mejorar la interacción con los usuarios y obtener resultados mediante estrategias a medida."
+            }
+        ]
+    },
     "about": {
         "button": "Sobre mí",
 

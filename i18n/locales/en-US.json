@@ -1,4 +1,22 @@
 {
+    "home": {
+        "headline": "Empowering your business through design & functional websites",
+        "subheadline": "Let your brand shine online with tailored digital solutions built to connect, engage, and grow.",
+        "features": [
+            {
+                "name": "Development",
+                "description": "Tailored websites that combine unique designs and robust functionality to perfectly reflect your brand and meet your business goals."
+            },
+            {
+                "name": "Design",
+                "description": "Visual solutions to enhance your brand identity, from memorable logos to cohesive design elements that elevate your marketing materials."
+            },
+            {
+                "name": "Consulting",
+                "description": "Expert guidance to optimize your online presence, improve user engagement, and drive results through targeted, innovative strategies."
+            }
+        ]
+    },
     "about": {
         "button": "About me",
 
