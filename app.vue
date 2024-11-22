@@ -15,8 +15,8 @@ watch(menuIsVisible, async (newVisibility) => {
 })
 
 useSeoMeta({
-    title: `${appConfig.contact.name} - ${appConfig.contact.description}`,
-    ogTitle: `${appConfig.contact.name} - ${appConfig.contact.description}`,
+    title: `${appConfig.contact.company} - ${appConfig.contact.description}`,
+    ogTitle: `${appConfig.contact.company} - ${appConfig.contact.description}`,
     description:
         "Hola, sóc la Natàlia, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
     ogDescription:
