@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { provide, ref } from 'vue'
-
+const appConfig = useAppConfig()
 const { locale } = useI18n()
 
 provide('notification', ref({ category: 'info', description: '' }))
@@ -12,6 +12,15 @@ watch(menuIsVisible, async (newVisibility) => {
     if (newVisibility) {
         window.scrollTo(0, 0)
     }
+})
+
+useSeoMeta({
+    title: `${appConfig.contact.name} - ${appConfig.contact.description}`,
+    ogTitle: `${appConfig.contact.name} - ${appConfig.contact.description}`,
+    description:
+        "Hola, sóc la Natàlia, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
+    ogDescription:
+        "Hola, sóc la Natàlia, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
 })
 </script>
 
