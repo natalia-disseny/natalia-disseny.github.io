@@ -64,7 +64,8 @@
             "name": "nombre",
             "company": "empresa",
             "message": "mensaje",
-            "submit": "Empieza el viaje!"
+            "submit": "Empieza el viaje!",
+            "sending": "Enviando..."
         }
     },
     "portfolio": {

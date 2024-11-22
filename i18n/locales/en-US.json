@@ -69,7 +69,8 @@
             "name": "name",
             "company": "company",
             "message": "message",
-            "submit": "Start the Journey!"
+            "submit": "Start the Journey!",
+            "sending": "Sending..."
         }
     },
     "portfolio": {

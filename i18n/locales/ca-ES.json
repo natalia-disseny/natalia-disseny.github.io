@@ -64,7 +64,8 @@
             "name": "nom",
             "company": "empresa",
             "message": "missatge",
-            "submit": "Comença el viatge!"
+            "submit": "Comença el viatge!",
+            "sending": "Enviant..."
         }
     },
     "portfolio": {

@@ -6,10 +6,12 @@ import {
 } from '~/assets/js/Interfaces'
 import EmailTemplate from '/components/form/EmailTemplate.vue'
 
+const sending = ref(false)
 const notification: NotificationInterface = inject('notification')
 const customer: Ref = ref({ name: '', email: '', message: '' })
 
 const sendEmail = () => {
+    sending.value = true
     const app = createApp(EmailTemplate, { customer: customer.value })
     const emailContent = document.createElement('div')
     app.mount(emailContent)
@@ -23,6 +25,7 @@ const sendEmail = () => {
         .then(() => {
             notification.value.category = 'success'
             notification.value.description = 'Email sent!'
+            sending.value = false
         })
         .catch((e: object) => {
             console.log(e)
@@ -34,7 +37,7 @@ const sendEmail = () => {
 
 <template>
     <div class="lg:order-last">
-        <form @submit.prevent="sendEmail()">
+        <form @submit.prevent="sendEmail">
             <div class="isolate mt-6 -space-y-px rounded-2xl">
                 <FormInput
                     autocomplete="name"
@@ -57,11 +60,16 @@ const sendEmail = () => {
             </div>
 
             <div class="mt-8 flex justify-end">
-                <div class="btn-primary">
+                <div class="btn-primary" :class="{ 'bg-accent-500': sending }">
                     <input
                         type="submit"
                         class="cursor-pointer"
-                        :value="$t('contact.form.submit')" />
+                        :value="
+                            sending
+                                ? $t('contact.form.sending')
+                                : $t('contact.form.submit')
+                        "
+                        :disabled="sending" />
                 </div>
             </div>
         </form>
