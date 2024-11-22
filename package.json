@@ -15,7 +15,6 @@
         "@nuxt/types": "^2.18.1",
         "@nuxtjs/i18n": "^9.1.0",
         "nuxt": "^3.14.1592",
-        "nuxt-mail": "^5.1.1",
         "vue": "latest"
     },
     "devDependencies": {

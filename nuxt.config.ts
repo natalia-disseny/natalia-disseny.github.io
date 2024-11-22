@@ -10,10 +10,6 @@ export default defineNuxtConfig({
         },
     },
 
-    nitro: {
-        routes: { '/': { prerender: true }, '/*': { cors: true } },
-    },
-
     app: {
         head: {
             meta: [
@@ -71,20 +67,6 @@ export default defineNuxtConfig({
                     file: 'es-ES.json',
                 },
             ],
-        },
-    ], [
-        'nuxt-mail',
-        {
-            message: {
-                to: 'nataliasmdev@gmail.com',
-            },
-            smtp: {
-                service: 'gmail',
-                auth: {
-                    user: 'nataliasmdev@gmail.com',
-                    pass: 'ihvr hoiq yakc kpvv',
-                },
-            },
         },
     ], '@nuxt/content'],
 

@@ -1,43 +1,12 @@
 <script setup lang="ts">
-import { createApp, ref, type Ref } from 'vue'
-import {
-    type CustomerInterface,
-    type NotificationInterface,
-} from '~/assets/js/Interfaces'
-import EmailTemplate from '/components/form/EmailTemplate.vue'
+import { ref, type Ref } from 'vue'
 
-const sending = ref(false)
-const notification: NotificationInterface = inject('notification')
 const customer: Ref = ref({ name: '', email: '', message: '' })
-
-const sendEmail = () => {
-    sending.value = true
-    const app = createApp(EmailTemplate, { customer: customer.value })
-    const emailContent = document.createElement('div')
-    app.mount(emailContent)
-
-    useMail()
-        .send({
-            from: customer.value.name,
-            subject: `${useAppConfig().contact.company} - Consulta de client`,
-            html: emailContent.outerHTML,
-        })
-        .then(() => {
-            notification.value.category = 'success'
-            notification.value.description = 'Email sent!'
-            sending.value = false
-        })
-        .catch((e: object) => {
-            console.log(e)
-        })
-
-    return
-}
 </script>
 
 <template>
     <div class="lg:order-last">
-        <form @submit.prevent="sendEmail">
+        <form action="https://formspree.io/f/xkgnzeka" method="POST">
             <div class="isolate mt-6 -space-y-px rounded-2xl">
                 <FormInput
                     autocomplete="name"
@@ -60,16 +29,11 @@ const sendEmail = () => {
             </div>
 
             <div class="mt-8 flex justify-end">
-                <div class="btn-primary" :class="{ 'bg-accent-500': sending }">
+                <div class="btn-primary">
                     <input
                         type="submit"
                         class="cursor-pointer"
-                        :value="
-                            sending
-                                ? $t('contact.form.sending')
-                                : $t('contact.form.submit')
-                        "
-                        :disabled="sending" />
+                        :value="$t('contact.form.submit')" />
                 </div>
             </div>
         </form>
