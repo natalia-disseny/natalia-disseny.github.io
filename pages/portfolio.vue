@@ -2,7 +2,11 @@
 const works = [
     {
         name: 'iTalentUp',
-        date: '2023-24',
+        date: '2023 - 2024',
+    },
+    {
+        name: 'ISDIN',
+        date: '2017 - 2022',
     },
 ]
 </script>
@@ -31,11 +35,9 @@ const works = [
                             <img
                                 alt=""
                                 loading="lazy"
-                                width="36"
-                                height="36"
                                 decoding="async"
                                 data-nimg="1"
-                                class="h-16 w-16 flex-none grayscale"
+                                class="h-16 w-auto flex-none grayscale transition-all hover:grayscale-0"
                                 style="color: transparent"
                                 :src="`/projects/${project.name}/logo.png`" />
                             <h3
@@ -46,11 +48,11 @@ const works = [
 
                         <div class="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                             <p
-                                class="after:text-primary-300 text-sm tracking-tight text-black after:ml-4 after:font-semibold after:content-['/'] lg:mt-2 lg:after:hidden"
+                                class="text-sm tracking-tight text-black after:ml-4 after:font-semibold after:text-primary-300 after:content-['/'] lg:mt-2 lg:after:hidden"
                                 v-html="
                                     $t(`portfolio.works[${index}].occupation`)
                                 " />
-                            <p class="text-secondary-900 text-sm lg:mt-2">
+                            <p class="text-sm text-secondary-900 lg:mt-2">
                                 <time :datetime="project.date">{{
                                     project.date
                                 }}</time>
@@ -75,7 +77,7 @@ const works = [
                 </div>
             </BoxedDiv>
 
-            <div class="bg-primary-200 col-span-full">
+            <div class="col-span-full bg-primary-200">
                 <div class="-my-px mx-auto max-w-[76rem]">
                     <div class="group relative">
                         <img
