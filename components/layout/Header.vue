@@ -7,7 +7,7 @@ const localePath = useLocalePath()
 const menu = [
     {
         button: 'about.button',
-        route: '/',
+        route: '/about-me',
     },
     {
         button: 'portfolio.eyebrow',
