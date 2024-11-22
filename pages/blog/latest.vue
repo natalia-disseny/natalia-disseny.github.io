@@ -5,7 +5,7 @@ const articles = await queryContent('blog').sort({ date: -1 }).limit(3).find()
 </script>
 
 <template>
-    <div class="mb-20 flex flex-col gap-x-8 gap-y-8 sm:flex-row">
+    <div class="mb-8 flex flex-col gap-x-8 gap-y-8 lg:flex-row">
         <div class="group flex basis-2/3 flex-col justify-between">
             <div>
                 <div class="relative">

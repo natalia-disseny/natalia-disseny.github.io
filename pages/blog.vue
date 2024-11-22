@@ -13,7 +13,7 @@ const articles = await queryContent('blog').sort({ date: -1 }).skip(3).find()
     <BoxedDiv>
         <Heading :eyebrow="$t('blog.eyebrow')" :heading="$t('blog.heading')" />
         <LatestArticles />
-        <div class="grid grid-cols-3 gap-x-8">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <BlogArticle v-for="post in articles" :post />
         </div>
         <NuxtPage />
