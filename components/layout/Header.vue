@@ -52,7 +52,7 @@ const menu = [
                                     <NuxtLink
                                         @click="menuIsVisible = false"
                                         v-for="item in menu"
-                                        class="group relative isolate -mx-6 bg-black px-6 py-10 before:w-px even:mt-px hover:text-accent-900 sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:pl-16"
+                                        class="hover:text-accent group relative isolate -mx-6 bg-black px-6 py-10 before:w-px even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:pl-16"
                                         :to="localePath(item.route)"
                                         >{{ $t(item.button)
                                         }}<span
