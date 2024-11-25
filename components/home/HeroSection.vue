@@ -34,25 +34,30 @@ const localePath = useLocalePath()
                         <div
                             class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                             <HomeHeroImage
-                                image="hero_1.jpg"
+                                src="/home/hero_1.jpg"
+                                alt="Decorative image"
                                 title="Photo by Andrew Neel: https://www.pexels.com/photo/woman-in-gray-jacket-sitting-beside-desk-2682452/" />
                         </div>
                         <div
                             class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                             <HomeHeroImage
-                                image="hero_2.jpg"
+                                src="/home/hero_2.jpg"
+                                alt="Decorative image"
                                 title="Photo by Leeloo The First from Pexels: https://www.pexels.com/photo/pictures-of-brand-strategy-and-design-7598018/" />
                             <HomeHeroImage
-                                image="hero_3.jpg"
+                                src="/home/hero_3.jpg"
+                                alt="Decorative image"
                                 title="Photo by picjumbo.com: https://www.pexels.com/photo/notebook-beside-the-iphone-on-table-196644/" />
                         </div>
                         <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                             <HomeHeroImage
-                                image="hero_4.jpg"
+                                src="/home/hero_4.jpg"
+                                alt="Decorative image"
                                 title="Photo by Flo Dahm: https://www.pexels.com/photo/turned-on-gray-laptop-computer-on-table-699459/" />
                             <HomeHeroImage
-                                image="hero_5.jpg"
-                                title="Photo by Roman Pohorecki: https://www.pexels.com/photo/hand-on-top-of-paper-17845/" />
+                                src="/home/hero_5.jpg"
+                                alt="Decorative image"
+                                title="Photo by Antoni Shkraba: https://www.pexels.com/photo/architect-writing-on-floor-plans-5292194/" />
                         </div>
                     </div>
                 </div>
