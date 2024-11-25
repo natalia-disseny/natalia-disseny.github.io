@@ -20,30 +20,27 @@
         @apply relative cursor-pointer rounded-full border-2 border-black px-4 py-2.5 font-medium transition-all before:contents;
     }
     .btn-primary:before {
-        @apply absolute right-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-y-1/2 translate-x-1/2 rounded-full bg-accent-900 transition-all ease-in-out;
+        @apply bg-accent absolute right-1/2 top-1/2 -z-10 block h-full w-full origin-center -translate-y-1/2 translate-x-1/2 rounded-full transition-all ease-in-out;
     }
     .btn-primary:hover:before {
         @apply mr-2 mt-2;
-    }
-    .btn-primary:focus:before {
-        @apply bg-accent-700;
     }
     .btn-primary.--onDark {
         @apply text-black hover:before:right-1/2 hover:before:top-1/2 hover:before:mr-0 hover:before:mt-0 hover:before:h-[128%] hover:before:w-[110%];
     }
 
     .btn-round {
-        @apply flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10 hover:bg-primary-700 hover:fill-accent-900 hover:text-accent-900 focus:bg-primary-900;
+        @apply hover:fill-accent hover:text-accent flex h-10 w-10 flex-wrap content-center justify-center rounded-full text-center align-middle uppercase leading-10 hover:bg-primary-700 focus:bg-primary-900;
     }
     .btn-round.--onDark {
-        @apply text-white hover:fill-accent-900 hover:text-accent-900 focus:bg-primary-800;
+        @apply hover:fill-accent hover:text-accent text-white focus:bg-primary-800;
     }
 
     .inlineLink {
-        @apply relative z-10 underline before:contents hover:bg-accent-900 hover:no-underline;
+        @apply hover:bg-accent relative z-10 underline before:contents hover:no-underline;
     }
     .inlineLink:hover:before {
-        @apply absolute left-1/2 top-0 -z-10 block h-full -translate-x-1/2 bg-accent-900;
+        @apply bg-accent absolute left-1/2 top-0 -z-10 block h-full -translate-x-1/2;
         width: calc(100% + 8px);
     }
     .inlineLink.--onDark {

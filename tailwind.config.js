@@ -27,17 +27,7 @@ const customPalette = {
         800: '#198c8c',
         900: '#008080',
     },
-    lemon: {
-        100: '#fffae0',
-        200: '#fff7d1',
-        300: '#fff5c2',
-        400: '#fff2b3',
-        500: '#fff0a3',
-        600: '#ffed94',
-        700: '#ffeb85',
-        800: '#ffe876',
-        900: '#ffe667',
-    },
+    lemon: '#ffe667',
 }
 
 export default {
