@@ -23,8 +23,7 @@ const localePath = useLocalePath()
                                 @click="menuIsVisible = false"
                                 :to="localePath('/contact')"
                                 title="Contact"
-                                class="hidden sm:inline"
-                                :onDark>
+                                class="hidden sm:inline">
                                 {{ $t('contact.cta') }}
                             </PrimaryButton>
                         </div>
