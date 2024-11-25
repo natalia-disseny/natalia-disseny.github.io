@@ -48,7 +48,17 @@ export default defineNuxtConfig({
                 },
             ],
         },
-    ], '@nuxt/content', '@nuxt/image'],
+    ],
+        '@nuxt/content',
+        '@nuxt/image',
+    [
+        'gtm-nuxt3',
+        {
+            gtm: {
+                id: 'GTM-K2F5GSQZ',
+            },
+        }]
+    ],
 
     nitro: {
         prerender: {
