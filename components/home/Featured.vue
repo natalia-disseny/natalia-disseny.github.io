@@ -33,8 +33,10 @@ const features = [
                         class="flex flex-col">
                         <dt
                             class="mb-4 font-display text-xl font-bold uppercase text-secondary-900">
-                            <img
-                                class="mx-auto mb-10 w-28"
+                            <NuxtImg
+                                width="80"
+                                height="auto"
+                                class="mx-auto mb-10"
                                 :src="`/home/icon-${feature.icon}.svg`"
                                 :alt="`Decorative icon - ${feature.name}`" />
                             {{ $t(`home.features[${index}].name`) }}

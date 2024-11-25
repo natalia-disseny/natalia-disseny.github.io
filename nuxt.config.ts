@@ -48,7 +48,7 @@ export default defineNuxtConfig({
                 },
             ],
         },
-    ], '@nuxt/content'],
+    ], '@nuxt/content', '@nuxt/image'],
 
     nitro: {
         prerender: {
