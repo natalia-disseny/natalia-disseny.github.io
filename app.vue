@@ -22,12 +22,28 @@ useSeoMeta({
     ogDescription:
         "Hola, sóc la Natàlia, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
 })
+
+const myGoogleFonts =
+    'family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap'
 </script>
 
 <template>
     <div>
         <Html class="h-full bg-black text-base antialiased" :lang="locale" />
         <Title>{{ useAppConfig().contact.company }}</Title>
+
+        <Link rel="preconnect" href="https://fonts.googleapis.com" />
+        <Link
+            rel="preload"
+            :href="'https://fonts.googleapis.com/css2?' + myGoogleFonts"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'" />
+        <NoScript>
+            <Link
+                rel="stylesheet"
+                :href="'https://fonts.googleapis.com/css2?' + myGoogleFonts"
+                type="text/css" />
+        </NoScript>
 
         <Body class="flex min-h-full flex-col">
             <LayoutHeader />

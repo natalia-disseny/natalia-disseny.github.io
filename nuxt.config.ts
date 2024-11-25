@@ -18,18 +18,6 @@ export default defineNuxtConfig({
                     content: 'width=device-width, initial-scale=1',
                 },
             ],
-            link: [
-                { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-                {
-                    rel: 'preconnect',
-                    href: 'https://fonts.gstatic.com',
-                    crossorigin: '',
-                },
-                {
-                    rel: 'stylesheet',
-                    href: 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
-                },
-            ],
         },
     },
 
