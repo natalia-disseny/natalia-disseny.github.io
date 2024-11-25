@@ -4,19 +4,19 @@ const features = [
         name: 'Development',
         description:
             'Tailored websites that combine unique designs and robust functionality to perfectly reflect your brand and meet your business goals.',
-        img: 'icon-coding.png',
+        icon: 'coding',
     },
     {
         name: 'Design',
         description:
             'Visual solutions to enhance your brand identity, from memorable logos to cohesive design elements that elevate your marketing materials.',
-        img: 'icon-design.png',
+        icon: 'design',
     },
     {
         name: 'Consulting',
         description:
             'Expert guidance to optimize your online presence, improve user engagement, and drive results through targeted, innovative strategies.',
-        img: 'icon-consulting.png',
+        icon: 'consulting',
     },
 ]
 </script>
@@ -35,8 +35,8 @@ const features = [
                             class="mb-4 font-display text-xl font-bold uppercase text-secondary-900">
                             <img
                                 class="mx-auto mb-10 w-28"
-                                :src="'/home/' + feature.img"
-                                alt="Presentation icons created by Freepik - https://www.flaticon.com/free-icons/presentation" />
+                                :src="`/home/icon-${feature.icon}.svg`"
+                                :alt="`Decorative icon - ${feature.name}`" />
                             {{ $t(`home.features[${index}].name`) }}
                         </dt>
                         <dd

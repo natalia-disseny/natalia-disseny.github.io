@@ -1,7 +1,7 @@
 {
     "arrowParens": "always",
     "bracketSameLine": true,
-    "plugins": ["prettier-plugin-tailwindcss"],
+    "plugins": ["prettier-plugin-tailwindcss", "@prettier/plugin-xml"],
     "semi": false,
     "singleQuote": true,
     "tabWidth": 4,

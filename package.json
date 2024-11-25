@@ -18,6 +18,7 @@
         "vue": "latest"
     },
     "devDependencies": {
+        "@prettier/plugin-xml": "^3.4.1",
         "@typescript-eslint/parser": "^8.15.0",
         "autoprefixer": "^10.4.20",
         "postcss": "^8.4.49",
