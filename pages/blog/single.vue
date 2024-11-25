@@ -21,11 +21,12 @@ defineProps({
                     {{ post.type }}
                 </div>
                 <div class="overflow-hidden rounded-3xl bg-coral-900">
-                    <img
+                    <NuxtImg
                         loading="lazy"
                         :class="{ 'h-[200px]': !mainPost }"
                         class="w-full object-cover opacity-90 transition duration-500 motion-safe:group-hover:scale-105"
                         :src="post._path + '.jpg'"
+                        sizes="1280 md:675px lg:790px"
                         :alt="post.imageTitle"
                         :title="post.title" />
                 </div>

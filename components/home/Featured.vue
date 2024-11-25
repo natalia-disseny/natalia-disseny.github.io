@@ -35,7 +35,7 @@ const features = [
                             class="mb-4 font-display text-xl font-bold uppercase text-secondary-900">
                             <NuxtImg
                                 width="80"
-                                height="auto"
+                                height="80"
                                 class="mx-auto mb-10"
                                 :src="`/home/icon-${feature.icon}.svg`"
                                 :alt="`Decorative icon - ${feature.name}`" />
