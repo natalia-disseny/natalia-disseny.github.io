@@ -27,15 +27,7 @@ export default defineNuxtConfig({
                 },
                 {
                     rel: 'stylesheet',
-                    href: 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap',
-                },
-                {
-                    rel: 'stylesheet',
-                    href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap',
-                },
-                {
-                    rel: 'stylesheet',
-                    href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
+                    href: 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0&display=swap',
                 },
             ],
         },
