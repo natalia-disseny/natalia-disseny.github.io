@@ -1,7 +1,3 @@
-<script setup>
-import ContactForm from './contact/form.vue'
-</script>
-
 <template>
     <Title>{{
         $t('contact.button') + ' - ' + useAppConfig().contact.company
