@@ -1,1 +1,2 @@
 Sitemap: https://natalia-disseny.github.io/sitemap_index.xml
+Allow: /
