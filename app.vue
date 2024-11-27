@@ -16,11 +16,18 @@ watch(menuIsVisible, async (newVisibility) => {
 
 useSeoMeta({
     title: `${appConfig.contact.company} - ${appConfig.contact.description}`,
-    ogTitle: `${appConfig.contact.company} - ${appConfig.contact.description}`,
     description:
-        "Hola, sóc la Natàlia, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
+        "Hola, sóc la Natàlia Martínez, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
+    author: 'Natàlia Martínez',
     ogDescription:
-        "Hola, sóc la Natàlia, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
+        "Hola, sóc la Natàlia Martínez, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
+    ogImage: '/profilePicture.jpg',
+    ogTitle: `${appConfig.contact.company} - ${appConfig.contact.description}`,
+    ogType: 'website',
+    ogUrl: 'https://natalia-disseny.github.io/',
+    twitterDescription:
+        "Hola, sóc la Natàlia Martínez, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
+    twitterTitle: `${appConfig.contact.company} - ${appConfig.contact.description}`,
 })
 
 const myGoogleFonts =
@@ -39,7 +46,6 @@ useHead({
 <template>
     <div>
         <Html class="h-full bg-black text-base antialiased" :lang="locale" />
-        <Title>{{ useAppConfig().contact.company }}</Title>
 
         <Link rel="preconnect" href="https://fonts.googleapis.com" />
         <Link
