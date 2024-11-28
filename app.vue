@@ -23,6 +23,7 @@ useSeoMeta({
         "Sóc la Natàlia Martínez, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
     ogImage: '/profilePicture.jpg',
     ogTitle: `${appConfig.contact.company} - ${appConfig.contact.description}`,
+    ogSiteName: appConfig.contact.company,
     ogType: 'website',
     ogUrl: 'https://natalia-disseny.github.io/',
     twitterDescription:
