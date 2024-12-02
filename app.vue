@@ -15,20 +15,17 @@ watch(menuIsVisible, async (newVisibility) => {
 })
 
 useSeoMeta({
-    title: `${appConfig.contact.company} - ${appConfig.contact.description}`,
     description:
-        'Fes que la teva marca destaqui en línia amb solucions digitals personalitzades creades per connectar, involucrar i créixer.',
+        'Fes que la teva marca destaqui en línia amb solucions digitals personalitzades. Solucions visuals per millorar la teva identitat, des de logotips fins a elements de disseny que potencien els teus materials de màrqueting.',
     author: 'Natàlia Martínez',
     ogDescription:
-        "Sóc la Natàlia Martínez, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
+        'Fes que la teva marca destaqui en línia amb solucions digitals personalitzades. Solucions visuals per millorar la teva identitat, des de logotips fins a elements de disseny que potencien els teus materials de màrqueting.',
     ogImage: '/profilePicture.jpg',
-    ogTitle: `${appConfig.contact.company} - ${appConfig.contact.description}`,
     ogSiteName: appConfig.contact.company,
     ogType: 'website',
     ogUrl: 'https://natalia-disseny.github.io/',
     twitterDescription:
-        "Sóc la Natàlia Martínez, la ment creativa darrere de Natàlia Disseny. M'apassiona ajudar les petites empreses locals a destacar en el món digital amb pàgines web impressionants, funcionals i responsive.",
-    twitterTitle: `${appConfig.contact.company} - ${appConfig.contact.description}`,
+        'Fes que la teva marca destaqui en línia amb solucions digitals personalitzades. Solucions visuals per millorar la teva identitat, des de logotips fins a elements de disseny que potencien els teus materials de màrqueting.',
 })
 
 const myGoogleFonts =
@@ -57,7 +54,7 @@ useHead({
         <Html class="h-full bg-black text-base antialiased" :lang="locale" />
 
         <!-- Favicon -->
-        <Link rel="icon" href="/favicon.ico" />
+        <Link rel="icon" href="/favicon.png" />
 
         <!-- Google Fonts-->
         <Link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -74,6 +71,13 @@ useHead({
         </NoScript>
 
         <Body class="flex min-h-full flex-col">
+            <div itemscope itemtype="https://schema.org/WebSite">
+                <link
+                    itemprop="url"
+                    href="https://natalia-disseny.github.io/" />
+                <meta itemprop="name" :content="appConfig.contact.company" />
+            </div>
+
             <LayoutHeader />
 
             <div

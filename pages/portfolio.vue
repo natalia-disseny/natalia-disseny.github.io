@@ -12,9 +12,7 @@ const works = [
 </script>
 
 <template>
-    <Title>{{
-        $t('portfolio.eyebrow') + ' - ' + useAppConfig().contact.company
-    }}</Title>
+    <Title>{{ $t('portfolio.eyebrow') }}</Title>
 
     <BoxedDiv>
         <Heading

@@ -3,9 +3,7 @@ const articles = await queryContent('blog').sort({ date: -1 }).skip(3).find()
 </script>
 
 <template>
-    <Title>{{
-        $t('blog.eyebrow') + ' - ' + useAppConfig().contact.company
-    }}</Title>
+    <Title>{{ $t('blog.eyebrow') }}</Title>
 
     <BoxedDiv>
         <Heading :eyebrow="$t('blog.eyebrow')" :heading="$t('blog.heading')" />

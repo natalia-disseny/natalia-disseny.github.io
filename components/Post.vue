@@ -2,6 +2,9 @@
 defineProps({
     post: Object,
 })
+useSeoMeta({
+    ogType: 'article',
+})
 </script>
 
 <template>

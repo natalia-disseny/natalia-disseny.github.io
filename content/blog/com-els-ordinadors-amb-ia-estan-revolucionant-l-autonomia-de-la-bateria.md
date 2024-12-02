@@ -1,6 +1,6 @@
 ---
 type: notícia
-title: 'Com els ordinadors amb ia estan revolucionant l’autonomia de la bateria'
+title: 'Com els ordinadors amb IA estan revolucionant l’autonomia de la bateria'
 date: '2024-12-10'
 imageTitle: 'Photo by Nothing Ahead: https://www.pexels.com/photo/crop-unrecognizable-man-typing-on-laptop-7531991/'
 ---

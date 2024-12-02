@@ -1,7 +1,5 @@
 <template>
-    <Title>{{
-        $t('about.button') + ' - ' + useAppConfig().contact.company
-    }}</Title>
+    <Title>{{ $t('about.button') }}</Title>
 
     <AboutMeIntro />
     <AboutMeGoals />
