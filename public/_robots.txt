@@ -2,4 +2,5 @@ Sitemap: https://natalia-disseny.github.io/sitemap_index.xml
 Sitemap: https://natalia-disseny.github.io/__sitemap__/ca.xml
 Sitemap: https://natalia-disseny.github.io/__sitemap__/en.xml
 Sitemap: https://natalia-disseny.github.io/__sitemap__/es.xml
+User-agent: *
 Allow: /
